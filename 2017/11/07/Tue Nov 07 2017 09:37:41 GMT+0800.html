@@ -72,7 +72,7 @@
 
 
 
-  <meta name="keywords" content="技术,个人" />
+  <meta name="keywords" content="mac,json,php," />
 
 
 
@@ -83,22 +83,21 @@
 
 
 
-<meta name="description" content="拷贝MJ封装的Cycript库 拷贝mjcript.py到/usr/lib/cycript0.9目录中（非登录环境中使用）  1scp -P 10010 ~/Downloads/课件/工具/mjcript-master/mjcript.cy root@localhost:/usr/lib/cycript0.9">
+<meta name="description" content="&amp;emsp;&amp;emsp;日常开发中，难免遇到客户端开发进度比后台进度快的情况。为避免工期延误，我们往往都要制作假数据进行UI测试。 &amp;emsp;&amp;emsp;假数据的制作推荐的两种方式，一种是apache服务器与json文件，另一种就是apache服务器与php文件。">
+<meta name="keywords" content="mac,json,php">
 <meta property="og:type" content="article">
-<meta property="og:title" content="【iOS底层笔记02】Cycript">
-<meta property="og:url" content="http://www.404not.cn/2018/02/10/undefined.html">
+<meta property="og:title" content="macOS环境生成json假数据">
+<meta property="og:url" content="http://www.404not.cn/2017/11/07/Tue Nov 07 2017 09:37:41 GMT+0800.html">
 <meta property="og:site_name" content="404博客">
-<meta property="og:description" content="拷贝MJ封装的Cycript库 拷贝mjcript.py到/usr/lib/cycript0.9目录中（非登录环境中使用）  1scp -P 10010 ~/Downloads/课件/工具/mjcript-master/mjcript.cy root@localhost:/usr/lib/cycript0.9">
+<meta property="og:description" content="&amp;emsp;&amp;emsp;日常开发中，难免遇到客户端开发进度比后台进度快的情况。为避免工期延误，我们往往都要制作假数据进行UI测试。 &amp;emsp;&amp;emsp;假数据的制作推荐的两种方式，一种是apache服务器与json文件，另一种就是apache服务器与php文件。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://www.404not.cn/2018/02/10/images/2018-02-10-【iOS底层学习02】Cycript/WX20180224-141405.png">
-<meta property="og:image" content="http://www.404not.cn/2018/02/10/images/2018-02-10-【iOS底层学习02】Cycript/WX20180224-114833.png">
-<meta property="og:image" content="http://www.404not.cn/2018/02/10/images/2018-02-10-【iOS底层学习02】Cycript/WX20180224-114931.png">
-<meta property="og:image" content="http://www.404not.cn/2018/02/10/images/2018-02-10-【iOS底层学习02】Cycript/WX20180224-114945.png">
-<meta property="og:updated_time" content="2018-02-24T09:33:52.000Z">
+<meta property="og:image" content="http://www.404not.cn/2017/11/07/images/2017-11-09-macOS环境生成json假数据/WX20171115-180312.png">
+<meta property="og:image" content="http://www.404not.cn/2017/11/07/images/2017-11-09-macOS环境生成json假数据/WX20171115-192217.png">
+<meta property="og:updated_time" content="2018-02-10T06:38:18.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="【iOS底层笔记02】Cycript">
-<meta name="twitter:description" content="拷贝MJ封装的Cycript库 拷贝mjcript.py到/usr/lib/cycript0.9目录中（非登录环境中使用）  1scp -P 10010 ~/Downloads/课件/工具/mjcript-master/mjcript.cy root@localhost:/usr/lib/cycript0.9">
-<meta name="twitter:image" content="http://www.404not.cn/2018/02/10/images/2018-02-10-【iOS底层学习02】Cycript/WX20180224-141405.png">
+<meta name="twitter:title" content="macOS环境生成json假数据">
+<meta name="twitter:description" content="&amp;emsp;&amp;emsp;日常开发中，难免遇到客户端开发进度比后台进度快的情况。为避免工期延误，我们往往都要制作假数据进行UI测试。 &amp;emsp;&amp;emsp;假数据的制作推荐的两种方式，一种是apache服务器与json文件，另一种就是apache服务器与php文件。">
+<meta name="twitter:image" content="http://www.404not.cn/2017/11/07/images/2017-11-09-macOS环境生成json假数据/WX20171115-180312.png">
 
 
 
@@ -128,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="http://www.404not.cn/2018/02/10/undefined.html"/>
+  <link rel="canonical" href="http://www.404not.cn/2017/11/07/Tue Nov 07 2017 09:37:41 GMT+0800.html"/>
 
 
 
 
 
-  <title>【iOS底层笔记02】Cycript | 404博客</title>
+  <title>macOS环境生成json假数据 | 404博客</title>
   
 
 
@@ -306,7 +305,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.404not.cn/2018/02/10/undefined.html">
+    <link itemprop="mainEntityOfPage" href="http://www.404not.cn/2017/11/07/Tue Nov 07 2017 09:37:41 GMT+0800.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="404NotFound">
@@ -323,7 +322,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">【iOS底层笔记02】Cycript</h2>
+          <h2 class="post-title" itemprop="name headline">macOS环境生成json假数据</h2>
         
 
         <div class="post-meta">
@@ -335,8 +334,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-10T14:43:33+08:00">
-                2018-02-10
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-07T09:37:41+08:00">
+                2017-11-07
               </time>
             
 
@@ -346,6 +345,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/mac/" itemprop="url" rel="index">
+                    <span itemprop="name">mac</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -354,8 +375,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/02/10/undefined.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/02/10/undefined.html" itemprop="commentsCount"></span>
+                <a href="/2017/11/07/Tue Nov 07 2017 09:37:41 GMT+0800.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2017/11/07/Tue Nov 07 2017 09:37:41 GMT+0800.html" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -363,7 +384,7 @@
 
           
           
-             <span id="/2018/02/10/undefined.html" class="leancloud_visitors" data-flag-title="【iOS底层笔记02】Cycript">
+             <span id="/2017/11/07/Tue Nov 07 2017 09:37:41 GMT+0800.html" class="leancloud_visitors" data-flag-title="macOS环境生成json假数据">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -394,190 +415,34 @@
       
 
       
-        <h1 id="拷贝MJ封装的Cycript库"><a href="#拷贝MJ封装的Cycript库" class="headerlink" title="拷贝MJ封装的Cycript库"></a>拷贝MJ封装的Cycript库</h1><ul>
-<li>拷贝<code>mjcript.py</code>到<code>/usr/lib/cycript0.9</code>目录中<strong>（非登录环境中使用）</strong></li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp -P <span class="number">10010</span> ~<span class="regexp">/Downloads/</span>课件/工具/mjcript-master/mjcript.cy root@localhost:<span class="regexp">/usr/</span>lib/cycript0<span class="number">.9</span></span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<ul>
-<li>也可以通过<code>iFunBox</code>直接拖拽<br><img src="images/2018-02-10-【iOS底层学习02】Cycript/WX20180224-141405.png" alt=""></li>
-</ul>
-<h1 id="SSH登录手机"><a href="#SSH登录手机" class="headerlink" title="SSH登录手机"></a>SSH登录手机</h1><ul>
-<li><p>USB方式映射MAC端口进行SSH登录<strong>（初始密码<code>alpine</code>）</strong></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">python tcprelay.py -t <span class="number">22</span>:<span class="number">10010</span></span><br><span class="line">ssh root@localhost -p <span class="number">10010</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>wifi方式SSH登录</p>
-</li>
-</ul>
-<h1 id="PS获取进程"><a href="#PS获取进程" class="headerlink" title="PS获取进程"></a>PS获取进程</h1><table>
-<thead>
-<tr>
-<th>PS命令</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ps -A</td>
-<td>获取所有进程</td>
-</tr>
-<tr>
-<td>ps -A&#124;grep</td>
-<td>根据关键字获取进程</td>
-</tr>
-</tbody>
-</table>
-<h1 id="Cycript连接进程"><a href="#Cycript连接进程" class="headerlink" title="Cycript连接进程"></a>Cycript连接进程</h1><p><code>cycript -p</code> 进程名称/进程id</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cycript -p WeChat <span class="comment">// 连接微信</span></span><br></pre></td></tr></table></figure>
-<h1 id="MJ库的导入及使用"><a href="#MJ库的导入及使用" class="headerlink" title="MJ库的导入及使用"></a>MJ库的导入及使用</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">import</span> mjcript <span class="comment">// 导入MJCript库</span></span><br></pre></td></tr></table></figure>
-<table>
-<thead>
-<tr>
-<th>基本</th>
-<th>描述 </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>MJLoadFramework()</td>
-<td>加载OC库</td>
-</tr>
-<tr>
-<td>MJAppId</td>
-<td>获取<code>bundleID</code></td>
-</tr>
-<tr>
-<td>MJAppPath</td>
-<td>获取<code>bundle</code>文件夹路径</td>
-</tr>
-<tr>
-<td>MJDocPath</td>
-<td>获取<code>document</code>文件夹路径</td>
-</tr>
-<tr>
-<td>MJCachesPath</td>
-<td>获取<code>caches</code>文件夹路径</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>对象/类相关</th>
-<th>描述 </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>MJKeyWin()</td>
-<td>获取<code>keywindow</code></td>
-</tr>
-<tr>
-<td>MJRootVc()</td>
-<td>获取根控制器</td>
-</tr>
-<tr>
-<td>MJFrontVc()</td>
-<td>获取最前面的控制器</td>
-</tr>
-<tr>
-<td>MJChildVcs()</td>
-<td>获取指定控制器的所有子控制器</td>
-</tr>
-<tr>
-<td>MJSubviews()</td>
-<td>获取指定<code>view</code>的所有子控件</td>
-</tr>
-<tr>
-<td>MJSubclasses()</td>
-<td>获取指定类的所有子类</td>
-</tr>
-<tr>
-<td>MJIvarNames()</td>
-<td>获取所有成员变量名称</td>
-</tr>
-<tr>
-<td>MJInstanceMethodNames()</td>
-<td>获取指定对象的所有对象方法</td>
-</tr>
-<tr>
-<td>MJClassMethodNames()</td>
-<td>获取指定类的所有类方法</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>类型判断相关</th>
-<th>描述 </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>MJIsString()</td>
-<td>判断是否是字符串</td>
-</tr>
-<tr>
-<td>MJIsArray()</td>
-<td>判断是否是数组</td>
-</tr>
-<tr>
-<td>MJIsNumber()</td>
-<td>判断是否是数字</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>CGRect相关</th>
-<th>描述 </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>MJPoint</td>
-<td>根据<code>frame</code>获取位置（个人新增）</td>
-</tr>
-<tr>
-<td>MJX</td>
-<td>根据<code>frame</code>获取<code>X</code>值（个人新增）</td>
-</tr>
-<tr>
-<td>MJY</td>
-<td>根据<code>frame</code>获取<code>Y</code>值（个人新增）</td>
-</tr>
-<tr>
-<td>MJSize</td>
-<td>根据<code>frame</code>获取尺寸（个人新增）</td>
-</tr>
-<tr>
-<td>MJWidth</td>
-<td>根据<code>frame</code>获取宽度（个人新增）</td>
-</tr>
-<tr>
-<td>MJHeight</td>
-<td>根据<code>frame</code>获取高度（个人新增）</td>
-</tr>
-<tr>
-<td>MJPointMake</td>
-<td>代替<code>CGPointMake</code>的使用</td>
-</tr>
-<tr>
-<td>MJSizeMake</td>
-<td>代替<code>CGSizeMake</code>的使用</td>
-</tr>
-<tr>
-<td>MJRectMake()</td>
-<td>代替<code>CGRectMake</code>的使用</td>
-</tr>
-</tbody>
-</table>
-<h1 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h1><ul>
-<li>所有结构体用类数组类型表示<br><img src="images/2018-02-10-【iOS底层学习02】Cycript/WX20180224-114833.png" alt=""></li>
-<li>如遇这种情况加个括号获取数值<br><img src="images/2018-02-10-【iOS底层学习02】Cycript/WX20180224-114931.png" alt=""><img src="images/2018-02-10-【iOS底层学习02】Cycript/WX20180224-114945.png" alt=""></li>
-</ul>
+        <p>&emsp;&emsp;日常开发中，难免遇到客户端开发进度比后台进度快的情况。为避免工期延误，我们往往都要制作假数据进行UI测试。</p>
+<p>&emsp;&emsp;假数据的制作推荐的两种方式，一种是<code>apache</code>服务器与<code>json</code>文件，另一种就是<code>apache</code>服务器与<code>php</code>文件。<br><a id="more"></a></p>
+<h1 id="apache-json"><a href="#apache-json" class="headerlink" title="apache+json"></a>apache+json</h1><p>开启apache服务器</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apachectl start</span><br></pre></td></tr></table></figure>
+<p>在apache目录下，创建JSON文件</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /Library/WebServer/Documents</span><br><span class="line">sudo touch test.json</span><br></pre></td></tr></table></figure>
+<p>编辑JSON文件</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;<span class="attr">"data"</span>:[</span><br><span class="line">            &#123;<span class="attr">"title"</span>:<span class="string">"title1"</span>,</span><br><span class="line">            <span class="attr">"picUrl"</span>:<span class="string">"pic1"</span>&#125;,</span><br><span class="line">            &#123;<span class="attr">"title"</span>:<span class="string">"titile2"</span>,</span><br><span class="line">            <span class="attr">"picUrl"</span>:<span class="string">"pic2"</span>&#125;</span><br><span class="line">        ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>网页输入<a href="http://localhost/test.json" target="_blank" rel="noopener">http://localhost/test.json</a>查看<br><code>localhost</code>相当于本机IP地址，如需提供给同事测试需要提供完整的IP地址<br><img src="images/2017-11-09-macOS环境生成json假数据/WX20171115-180312.png" alt=""></p>
+<h1 id="apache-php"><a href="#apache-php" class="headerlink" title="apache+php"></a>apache+php</h1><p>开启apache服务器</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apachectl start</span><br></pre></td></tr></table></figure>
+<p>开启PHP<br>前往/etc/apache2/ 找到httpd.conf文件，找到以下代码去掉<code>#</code>号</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">LoadModule php5_module libexec/apache2/libphp5.so</span></span><br></pre></td></tr></table></figure>
+<p>在apache目录下，创建php文件</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /Library/WebServer/Documents</span><br><span class="line">sudo touch test.php</span><br></pre></td></tr></table></figure>
+<p>编辑php文件</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$jsondata = <span class="keyword">array</span>(<span class="string">'code'</span>=&gt;<span class="string">'1'</span>,</span><br><span class="line">                  <span class="string">'msg'</span>=&gt;<span class="string">'success'</span>,</span><br><span class="line">                  <span class="string">'info'</span>=&gt;<span class="keyword">array</span>(<span class="keyword">array</span>(<span class="string">'title'</span>=&gt;<span class="string">'title1'</span>,</span><br><span class="line">                                      <span class="string">'pic'</span>=&gt;<span class="string">'pic1'</span>),</span><br><span class="line">                                <span class="keyword">array</span>(<span class="string">'title'</span>=&gt;<span class="string">'title2'</span>,</span><br><span class="line">                                      <span class="string">'pic'</span>=&gt;<span class="string">'pic2'</span>)));</span><br><span class="line"><span class="keyword">echo</span> json_encode($jsondata);</span><br></pre></td></tr></table></figure>
+<p>网页输入<a href="http://localhost/test.php" target="_blank" rel="noopener">http://localhost/test.php</a>查看<br><img src="images/2017-11-09-macOS环境生成json假数据/WX20171115-192217.png" alt=""></p>
+<h1 id="xcode调试"><a href="#xcode调试" class="headerlink" title="xcode调试"></a>xcode调试</h1><p>成功创建json文件或php文件后，将其url直接进行网络请求</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// http://localhost/test.php 或者 http://localhost/test.json</span></span><br><span class="line"><span class="built_in">NSURL</span> *url = [<span class="built_in">NSURL</span> URLWithString:<span class="string">@"http://localhost/test.php"</span>];</span><br><span class="line"><span class="built_in">NSURLSession</span> *session = [<span class="built_in">NSURLSession</span> sharedSession];</span><br><span class="line"><span class="built_in">NSURLSessionDataTask</span> *dataTask = [session dataTaskWithURL:url completionHandler:^(<span class="built_in">NSData</span> * _Nullable data, <span class="built_in">NSURLResponse</span> * _Nullable response, <span class="built_in">NSError</span> * _Nullable error) &#123;</span><br><span class="line">    <span class="built_in">NSDictionary</span> *result = [<span class="built_in">NSJSONSerialization</span> JSONObjectWithData:data options:kNilOptions error:<span class="literal">nil</span>];</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@"%@"</span>,result);</span><br><span class="line">&#125;];</span><br><span class="line">    </span><br><span class="line">[dataTask resume];</span><br></pre></td></tr></table></figure>
+<h1 id="apache操作"><a href="#apache操作" class="headerlink" title="apache操作"></a>apache操作</h1><p>开启</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apachectl start</span><br></pre></td></tr></table></figure>
+<p>关闭</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apachectl stop</span><br></pre></td></tr></table></figure>
+<p>重启</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apachectl restart</span><br></pre></td></tr></table></figure>
+<p>查看版本号</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apachectl -v</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -612,6 +477,19 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/mac/" rel="tag" style="background-color: #6F6F6F;color: white;border-radius: 3px;padding: 0px 8px;font-size: 10px;"> mac</a>
+            
+          
+            <a href="/tags/json/" rel="tag" style="background-color: #6F6F6F;color: white;border-radius: 3px;padding: 0px 8px;font-size: 10px;"> json</a>
+            
+          
+            <a href="/tags/php/" rel="tag" style="background-color: #6F6F6F;color: white;border-radius: 3px;padding: 0px 8px;font-size: 10px;"> php</a>
+            
+          
+        </div>
+      
 
       
       
@@ -621,15 +499,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/12/13/undefined.html" rel="next" title="next-侧边栏时钟">
-                <i class="fa fa-chevron-left"></i> next-侧边栏时钟
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/11/08/Wed Nov 08 2017 10:21:34 GMT+0800.html" rel="prev" title="UIPickerView三级联动">
+                UIPickerView三级联动 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -842,7 +720,7 @@ function zeroPadding(num, digit) {
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#拷贝MJ封装的Cycript库"><span class="nav-number">1.</span> <span class="nav-text">拷贝MJ封装的Cycript库</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#SSH登录手机"><span class="nav-number">2.</span> <span class="nav-text">SSH登录手机</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#PS获取进程"><span class="nav-number">3.</span> <span class="nav-text">PS获取进程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Cycript连接进程"><span class="nav-number">4.</span> <span class="nav-text">Cycript连接进程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#MJ库的导入及使用"><span class="nav-number">5.</span> <span class="nav-text">MJ库的导入及使用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#注意"><span class="nav-number">6.</span> <span class="nav-text">注意</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#apache-json"><span class="nav-number">1.</span> <span class="nav-text">apache+json</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#apache-php"><span class="nav-number">2.</span> <span class="nav-text">apache+php</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#xcode调试"><span class="nav-number">3.</span> <span class="nav-text">xcode调试</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#apache操作"><span class="nav-number">4.</span> <span class="nav-text">apache操作</span></a></li></ol></div>
             
 
           </div>

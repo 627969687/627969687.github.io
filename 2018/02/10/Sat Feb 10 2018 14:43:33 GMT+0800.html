@@ -72,7 +72,7 @@
 
 
 
-  <meta name="keywords" content="iOS,OC,UIPickerView," />
+  <meta name="keywords" content="技术,个人" />
 
 
 
@@ -83,19 +83,22 @@
 
 
 
-<meta name="keywords" content="iOS,OC,UIPickerView">
+<meta name="description" content="拷贝MJ封装的Cycript库 拷贝mjcript.py到/usr/lib/cycript0.9目录中（非登录环境中使用）  1scp -P 10010 ~/Downloads/课件/工具/mjcript-master/mjcript.cy root@localhost:/usr/lib/cycript0.9">
 <meta property="og:type" content="article">
-<meta property="og:title" content="UIPickerView三级联动">
-<meta property="og:url" content="http://www.404not.cn/2017/11/08/undefined.html">
+<meta property="og:title" content="【iOS底层笔记02】Cycript">
+<meta property="og:url" content="http://www.404not.cn/2018/02/10/Sat Feb 10 2018 14:43:33 GMT+0800.html">
 <meta property="og:site_name" content="404博客">
+<meta property="og:description" content="拷贝MJ封装的Cycript库 拷贝mjcript.py到/usr/lib/cycript0.9目录中（非登录环境中使用）  1scp -P 10010 ~/Downloads/课件/工具/mjcript-master/mjcript.cy root@localhost:/usr/lib/cycript0.9">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://www.404not.cn/2017/11/08/images/2017-11-08-UIPickerView三级联动/WX20171129-114238.png">
-<meta property="og:image" content="http://www.404not.cn/2017/11/08/images/2017-11-08-UIPickerView三级联动/WX20171202-115530.png">
-<meta property="og:image" content="http://www.404not.cn/2017/11/08/images/2017-11-08-UIPickerView三级联动/WX20171202-115530.png">
-<meta property="og:updated_time" content="2018-02-10T06:38:18.000Z">
+<meta property="og:image" content="http://www.404not.cn/2018/02/10/images/2018-02-10-【iOS底层学习02】Cycript/WX20180224-141405.png">
+<meta property="og:image" content="http://www.404not.cn/2018/02/10/images/2018-02-10-【iOS底层学习02】Cycript/WX20180224-114833.png">
+<meta property="og:image" content="http://www.404not.cn/2018/02/10/images/2018-02-10-【iOS底层学习02】Cycript/WX20180224-114931.png">
+<meta property="og:image" content="http://www.404not.cn/2018/02/10/images/2018-02-10-【iOS底层学习02】Cycript/WX20180224-114945.png">
+<meta property="og:updated_time" content="2018-02-24T09:33:52.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="UIPickerView三级联动">
-<meta name="twitter:image" content="http://www.404not.cn/2017/11/08/images/2017-11-08-UIPickerView三级联动/WX20171129-114238.png">
+<meta name="twitter:title" content="【iOS底层笔记02】Cycript">
+<meta name="twitter:description" content="拷贝MJ封装的Cycript库 拷贝mjcript.py到/usr/lib/cycript0.9目录中（非登录环境中使用）  1scp -P 10010 ~/Downloads/课件/工具/mjcript-master/mjcript.cy root@localhost:/usr/lib/cycript0.9">
+<meta name="twitter:image" content="http://www.404not.cn/2018/02/10/images/2018-02-10-【iOS底层学习02】Cycript/WX20180224-141405.png">
 
 
 
@@ -125,13 +128,13 @@
 
 
 
-  <link rel="canonical" href="http://www.404not.cn/2017/11/08/undefined.html"/>
+  <link rel="canonical" href="http://www.404not.cn/2018/02/10/Sat Feb 10 2018 14:43:33 GMT+0800.html"/>
 
 
 
 
 
-  <title>UIPickerView三级联动 | 404博客</title>
+  <title>【iOS底层笔记02】Cycript | 404博客</title>
   
 
 
@@ -303,7 +306,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.404not.cn/2017/11/08/undefined.html">
+    <link itemprop="mainEntityOfPage" href="http://www.404not.cn/2018/02/10/Sat Feb 10 2018 14:43:33 GMT+0800.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="404NotFound">
@@ -320,7 +323,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">UIPickerView三级联动</h2>
+          <h2 class="post-title" itemprop="name headline">【iOS底层笔记02】Cycript</h2>
         
 
         <div class="post-meta">
@@ -332,8 +335,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-08T10:21:34+08:00">
-                2017-11-08
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-10T14:43:33+08:00">
+                2018-02-10
               </time>
             
 
@@ -343,61 +346,6 @@
           </span>
 
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/iOS/" itemprop="url" rel="index">
-                    <span itemprop="name">iOS</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/iOS/OC/" itemprop="url" rel="index">
-                    <span itemprop="name">OC</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/iOS/OC/控件/" itemprop="url" rel="index">
-                    <span itemprop="name">控件</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/iOS/OC/控件/UIPickerView/" itemprop="url" rel="index">
-                    <span itemprop="name">UIPickerView</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
 
           
             
@@ -406,8 +354,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/11/08/undefined.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count gitment-comments-count" data-xid="/2017/11/08/undefined.html" itemprop="commentsCount"></span>
+                <a href="/2018/02/10/Sat Feb 10 2018 14:43:33 GMT+0800.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/02/10/Sat Feb 10 2018 14:43:33 GMT+0800.html" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -415,7 +363,7 @@
 
           
           
-             <span id="/2017/11/08/undefined.html" class="leancloud_visitors" data-flag-title="UIPickerView三级联动">
+             <span id="/2018/02/10/Sat Feb 10 2018 14:43:33 GMT+0800.html" class="leancloud_visitors" data-flag-title="【iOS底层笔记02】Cycript">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -446,72 +394,190 @@
       
 
       
-        <p><img src="images/2017-11-08-UIPickerView三级联动/WX20171129-114238.png" alt=""><br><a id="more"></a><br>前几天朋友要求帮忙使用<code>OC</code>写一个&lt;省-市-区&gt;的<code>UIPickerView</code>控件，写完之后这里给大家讲一下思路和遇到的问题…..</p>
-<p><a href="files/2017-11-08-UIPickerView三级联动/files.zip">数据</a>是由朋友提供，这里已经把数据保存到本地，请参考《<a href="http://tk_jacky.gitee.io/macOS%E7%8E%AF%E5%A2%83%E7%94%9F%E6%88%90json%E5%81%87%E6%95%B0%E6%8D%AE.html" target="_blank" rel="noopener">macOS环境生成json假数据</a>》制作假数据</p>
-<h1 id="数据"><a href="#数据" class="headerlink" title="数据"></a>数据</h1><p><img src="images/2017-11-08-UIPickerView三级联动/WX20171202-115530.png" alt=""><br><img src="images/2017-11-08-UIPickerView三级联动/WX20171202-115530.png" alt=""></p>
-<p>观察数据格式，我们可以发现省、市、区的名字由<code>name</code>这个键值对控制，每个省/市下有多少个市/区由<code>children</code>控制</p>
-<p>获取数据过程中，我们可能会遇到以下问题：</p>
-<ul>
-<li>初次运行网络问题</li>
-<li>text/html格式问题</li>
-<li>null数据处理</li>
+        <h1 id="拷贝MJ封装的Cycript库"><a href="#拷贝MJ封装的Cycript库" class="headerlink" title="拷贝MJ封装的Cycript库"></a>拷贝MJ封装的Cycript库</h1><ul>
+<li>拷贝<code>mjcript.py</code>到<code>/usr/lib/cycript0.9</code>目录中<strong>（非登录环境中使用）</strong></li>
 </ul>
-<p>关于数据的处理，我们使用了<a href="https://github.com/AFNetworking/AFNetworking" target="_blank" rel="noopener">AFNetworking</a>和<a href="https://github.com/CoderMJLee/MJExtension" target="_blank" rel="noopener">MJExtension</a>框架</p>
-<h1 id="具体实现"><a href="#具体实现" class="headerlink" title="具体实现"></a>具体实现</h1><p>定义省、市、区的数据源</p>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@property</span>(<span class="keyword">nonatomic</span>,<span class="keyword">strong</span>)<span class="built_in">NSArray</span>&lt;ProvinceModel *&gt; *provinceArr; <span class="comment">// 省</span></span><br><span class="line"><span class="keyword">@property</span>(<span class="keyword">nonatomic</span>,<span class="keyword">strong</span>)<span class="built_in">NSArray</span>&lt;CityModel *&gt; *cityArr; <span class="comment">// 市</span></span><br><span class="line"><span class="keyword">@property</span>(<span class="keyword">nonatomic</span>,<span class="keyword">strong</span>)<span class="built_in">NSArray</span>&lt;AreaModel *&gt; *areaArr; <span class="comment">// 区</span></span><br></pre></td></tr></table></figure>
-<p>省、市、区初始加载的数据源为第一个省的第一个市的第一个区</p>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#pragma mark - 加载数据</span></span><br><span class="line">- (<span class="keyword">void</span>)loadData &#123;</span><br><span class="line">    AFHTTPSessionManager *mgr = [AFHTTPSessionManager js_mgr];</span><br><span class="line">    <span class="comment">// 参考假数据实现《http://192.168.11.128/getArea.html》</span></span><br><span class="line">    [mgr GET:<span class="string">@"http://192.168.11.128/getArea.html"</span> parameters:<span class="literal">nil</span> progress:<span class="literal">nil</span> success:^(<span class="built_in">NSURLSessionDataTask</span> * _Nonnull task, <span class="built_in">NSDictionary</span> *result) &#123;</span><br><span class="line">        <span class="comment">// 省</span></span><br><span class="line">        <span class="keyword">self</span>.provinceArr = [ProvinceModel mj_objectArrayWithKeyValuesArray:result[<span class="string">@"resultInfo"</span>]];</span><br><span class="line">        <span class="comment">// 市</span></span><br><span class="line">        <span class="keyword">self</span>.cityArr = <span class="keyword">self</span>.provinceArr.firstObject.children;</span><br><span class="line">        <span class="comment">// 区</span></span><br><span class="line">        <span class="keyword">self</span>.areaArr = <span class="keyword">self</span>.cityArr.firstObject.children;</span><br><span class="line">        <span class="comment">// 刷新</span></span><br><span class="line">        [<span class="keyword">self</span>.pickerView reloadAllComponents];</span><br><span class="line">        <span class="comment">// 停止网络监听</span></span><br><span class="line">        [[AFNetworkReachabilityManager sharedManager] stopMonitoring];</span><br><span class="line">    &#125; failure:^(<span class="built_in">NSURLSessionDataTask</span> * _Nullable task, <span class="built_in">NSError</span> * _Nonnull error) &#123;</span><br><span class="line">        [[AFNetworkReachabilityManager sharedManager] stopMonitoring];</span><br><span class="line">    &#125;];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>设置数据显示</p>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 列数</span></span><br><span class="line">- (<span class="built_in">NSInteger</span>)numberOfComponentsInPickerView:(<span class="built_in">UIPickerView</span> *)pickerView &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">3</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 每列有多少行</span></span><br><span class="line">- (<span class="built_in">NSInteger</span>)pickerView:(<span class="built_in">UIPickerView</span> *)pickerView numberOfRowsInComponent:(<span class="built_in">NSInteger</span>)component &#123;</span><br><span class="line">    <span class="built_in">NSInteger</span> ret = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">switch</span> (component) &#123;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">0</span>: <span class="comment">// 省</span></span><br><span class="line">            ret = <span class="keyword">self</span>.provinceArr.count;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">1</span>: <span class="comment">// 市</span></span><br><span class="line">            ret = <span class="keyword">self</span>.cityArr.count;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">2</span>: <span class="comment">// 区</span></span><br><span class="line">            ret = <span class="keyword">self</span>.areaArr.count;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 返回每一行的内容</span></span><br><span class="line">- (<span class="built_in">NSString</span> *)pickerView:(<span class="built_in">UIPickerView</span> *)pickerView titleForRow:(<span class="built_in">NSInteger</span>)row forComponent:(<span class="built_in">NSInteger</span>)component &#123;</span><br><span class="line">    <span class="built_in">NSString</span> *ret = <span class="string">@""</span>;</span><br><span class="line">    <span class="keyword">switch</span> (component) &#123;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">0</span>:</span><br><span class="line">            ret = <span class="keyword">self</span>.provinceArr[row].name;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">            ret = <span class="keyword">self</span>.cityArr[row].name;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">            ret = <span class="keyword">self</span>.areaArr[row].name;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>选中哪一个省都要根据当前选择的第几行去更新市的数据源，同理更新区的数据源</p>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 滑动或点击选择，确认pickerView选中结果</span></span><br><span class="line">- (<span class="keyword">void</span>)pickerView:(<span class="built_in">UIPickerView</span> *)pickerView didSelectRow:(<span class="built_in">NSInteger</span>)row inComponent:(<span class="built_in">NSInteger</span>)component &#123;</span><br><span class="line">    <span class="keyword">switch</span> (component) &#123;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">0</span>: <span class="comment">// 省</span></span><br><span class="line">            <span class="keyword">self</span>.cityArr = <span class="keyword">self</span>.provinceArr[row].children;</span><br><span class="line">            <span class="keyword">self</span>.areaArr = <span class="keyword">self</span>.cityArr.firstObject.children;</span><br><span class="line">            </span><br><span class="line">            [<span class="keyword">self</span>.pickerView reloadAllComponents];</span><br><span class="line">            [<span class="keyword">self</span>.pickerView selectRow:<span class="number">0</span> inComponent:<span class="number">1</span> animated:<span class="literal">false</span>];</span><br><span class="line">            [<span class="keyword">self</span>.pickerView selectRow:<span class="number">0</span> inComponent:<span class="number">2</span> animated:<span class="literal">false</span>];</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">1</span>: <span class="comment">// 市</span></span><br><span class="line">            <span class="keyword">self</span>.areaArr = <span class="keyword">self</span>.cityArr[row].children;</span><br><span class="line">            </span><br><span class="line">            [<span class="keyword">self</span>.pickerView reloadAllComponents];</span><br><span class="line">            [<span class="keyword">self</span>.pickerView selectRow:<span class="number">0</span> inComponent:<span class="number">2</span> animated:<span class="literal">false</span>];</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">2</span>: <span class="comment">// 区</span></span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><table>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp -P <span class="number">10010</span> ~<span class="regexp">/Downloads/</span>课件/工具/mjcript-master/mjcript.cy root@localhost:<span class="regexp">/usr/</span>lib/cycript0<span class="number">.9</span></span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<ul>
+<li>也可以通过<code>iFunBox</code>直接拖拽<br><img src="images/2018-02-10-【iOS底层学习02】Cycript/WX20180224-141405.png" alt=""></li>
+</ul>
+<h1 id="SSH登录手机"><a href="#SSH登录手机" class="headerlink" title="SSH登录手机"></a>SSH登录手机</h1><ul>
+<li><p>USB方式映射MAC端口进行SSH登录<strong>（初始密码<code>alpine</code>）</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">python tcprelay.py -t <span class="number">22</span>:<span class="number">10010</span></span><br><span class="line">ssh root@localhost -p <span class="number">10010</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>wifi方式SSH登录</p>
+</li>
+</ul>
+<h1 id="PS获取进程"><a href="#PS获取进程" class="headerlink" title="PS获取进程"></a>PS获取进程</h1><table>
 <thead>
 <tr>
-<th>原生</th>
-<th>资料</th>
+<th>PS命令</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>UIPickerView</td>
-<td><a href="http://www.cnblogs.com/jukaiit/p/5213499.html" target="_blank" rel="noopener">UIPickerView的使用(一)</a></td>
+<td>ps -A</td>
+<td>获取所有进程</td>
+</tr>
+<tr>
+<td>ps -A&#124;grep</td>
+<td>根据关键字获取进程</td>
+</tr>
+</tbody>
+</table>
+<h1 id="Cycript连接进程"><a href="#Cycript连接进程" class="headerlink" title="Cycript连接进程"></a>Cycript连接进程</h1><p><code>cycript -p</code> 进程名称/进程id</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cycript -p WeChat <span class="comment">// 连接微信</span></span><br></pre></td></tr></table></figure>
+<h1 id="MJ库的导入及使用"><a href="#MJ库的导入及使用" class="headerlink" title="MJ库的导入及使用"></a>MJ库的导入及使用</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">import</span> mjcript <span class="comment">// 导入MJCript库</span></span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>基本</th>
+<th>描述 </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MJLoadFramework()</td>
+<td>加载OC库</td>
+</tr>
+<tr>
+<td>MJAppId</td>
+<td>获取<code>bundleID</code></td>
+</tr>
+<tr>
+<td>MJAppPath</td>
+<td>获取<code>bundle</code>文件夹路径</td>
+</tr>
+<tr>
+<td>MJDocPath</td>
+<td>获取<code>document</code>文件夹路径</td>
+</tr>
+<tr>
+<td>MJCachesPath</td>
+<td>获取<code>caches</code>文件夹路径</td>
 </tr>
 </tbody>
 </table>
 <table>
 <thead>
 <tr>
-<th>第三方库</th>
-<th>资料</th>
+<th>对象/类相关</th>
+<th>描述 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>AFNetworking</td>
-<td><a href="">AFNetworking使用</a></td>
+<td>MJKeyWin()</td>
+<td>获取<code>keywindow</code></td>
 </tr>
 <tr>
-<td>MJExtension</td>
-<td><a href="https://github.com/CoderMJLee/MJExtension" target="_blank" rel="noopener">MJExtension官方文档</a></td>
+<td>MJRootVc()</td>
+<td>获取根控制器</td>
+</tr>
+<tr>
+<td>MJFrontVc()</td>
+<td>获取最前面的控制器</td>
+</tr>
+<tr>
+<td>MJChildVcs()</td>
+<td>获取指定控制器的所有子控制器</td>
+</tr>
+<tr>
+<td>MJSubviews()</td>
+<td>获取指定<code>view</code>的所有子控件</td>
+</tr>
+<tr>
+<td>MJSubclasses()</td>
+<td>获取指定类的所有子类</td>
+</tr>
+<tr>
+<td>MJIvarNames()</td>
+<td>获取所有成员变量名称</td>
+</tr>
+<tr>
+<td>MJInstanceMethodNames()</td>
+<td>获取指定对象的所有对象方法</td>
+</tr>
+<tr>
+<td>MJClassMethodNames()</td>
+<td>获取指定类的所有类方法</td>
 </tr>
 </tbody>
 </table>
 <table>
 <thead>
 <tr>
-<th>其他</th>
-<th>资料</th>
+<th>类型判断相关</th>
+<th>描述 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>假数据</td>
-<td><a href="http://tk_jacky.gitee.io/macOS%E7%8E%AF%E5%A2%83%E7%94%9F%E6%88%90json%E5%81%87%E6%95%B0%E6%8D%AE.html" target="_blank" rel="noopener">macOS环境生成json假数据</a></td>
+<td>MJIsString()</td>
+<td>判断是否是字符串</td>
+</tr>
+<tr>
+<td>MJIsArray()</td>
+<td>判断是否是数组</td>
+</tr>
+<tr>
+<td>MJIsNumber()</td>
+<td>判断是否是数字</td>
 </tr>
 </tbody>
 </table>
-<p><br><br><a href="https://github.com/627969687/UIPickerView_three_level" target="_blank" rel="noopener">demo下载</a></p>
+<table>
+<thead>
+<tr>
+<th>CGRect相关</th>
+<th>描述 </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MJPoint</td>
+<td>根据<code>frame</code>获取位置（个人新增）</td>
+</tr>
+<tr>
+<td>MJX</td>
+<td>根据<code>frame</code>获取<code>X</code>值（个人新增）</td>
+</tr>
+<tr>
+<td>MJY</td>
+<td>根据<code>frame</code>获取<code>Y</code>值（个人新增）</td>
+</tr>
+<tr>
+<td>MJSize</td>
+<td>根据<code>frame</code>获取尺寸（个人新增）</td>
+</tr>
+<tr>
+<td>MJWidth</td>
+<td>根据<code>frame</code>获取宽度（个人新增）</td>
+</tr>
+<tr>
+<td>MJHeight</td>
+<td>根据<code>frame</code>获取高度（个人新增）</td>
+</tr>
+<tr>
+<td>MJPointMake</td>
+<td>代替<code>CGPointMake</code>的使用</td>
+</tr>
+<tr>
+<td>MJSizeMake</td>
+<td>代替<code>CGSizeMake</code>的使用</td>
+</tr>
+<tr>
+<td>MJRectMake()</td>
+<td>代替<code>CGRectMake</code>的使用</td>
+</tr>
+</tbody>
+</table>
+<h1 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h1><ul>
+<li>所有结构体用类数组类型表示<br><img src="images/2018-02-10-【iOS底层学习02】Cycript/WX20180224-114833.png" alt=""></li>
+<li>如遇这种情况加个括号获取数值<br><img src="images/2018-02-10-【iOS底层学习02】Cycript/WX20180224-114931.png" alt=""><img src="images/2018-02-10-【iOS底层学习02】Cycript/WX20180224-114945.png" alt=""></li>
+</ul>
 
       
     </div>
@@ -546,19 +612,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/iOS/" rel="tag" style="background-color: #6F6F6F;color: white;border-radius: 3px;padding: 0px 8px;font-size: 10px;"> iOS</a>
-            
-          
-            <a href="/tags/OC/" rel="tag" style="background-color: #6F6F6F;color: white;border-radius: 3px;padding: 0px 8px;font-size: 10px;"> OC</a>
-            
-          
-            <a href="/tags/UIPickerView/" rel="tag" style="background-color: #6F6F6F;color: white;border-radius: 3px;padding: 0px 8px;font-size: 10px;"> UIPickerView</a>
-            
-          
-        </div>
-      
 
       
       
@@ -568,8 +621,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/11/07/undefined.html" rel="next" title="macOS环境生成json假数据">
-                <i class="fa fa-chevron-left"></i> macOS环境生成json假数据
+              <a href="/2017/12/13/Wed Dec 13 2017 17:21:06 GMT+0800.html" rel="next" title="next-侧边栏时钟">
+                <i class="fa fa-chevron-left"></i> next-侧边栏时钟
               </a>
             
           </div>
@@ -577,10 +630,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/11/16/undefined.html" rel="prev" title="swift-推特启动动画">
-                swift-推特启动动画 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -793,7 +842,7 @@ function zeroPadding(num, digit) {
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#数据"><span class="nav-number">1.</span> <span class="nav-text">数据</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#具体实现"><span class="nav-number">2.</span> <span class="nav-text">具体实现</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考文献"><span class="nav-number">3.</span> <span class="nav-text">参考文献</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#拷贝MJ封装的Cycript库"><span class="nav-number">1.</span> <span class="nav-text">拷贝MJ封装的Cycript库</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#SSH登录手机"><span class="nav-number">2.</span> <span class="nav-text">SSH登录手机</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#PS获取进程"><span class="nav-number">3.</span> <span class="nav-text">PS获取进程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Cycript连接进程"><span class="nav-number">4.</span> <span class="nav-text">Cycript连接进程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#MJ库的导入及使用"><span class="nav-number">5.</span> <span class="nav-text">MJ库的导入及使用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#注意"><span class="nav-number">6.</span> <span class="nav-text">注意</span></a></li></ol></div>
             
 
           </div>
