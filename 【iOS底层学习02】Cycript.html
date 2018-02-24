@@ -83,17 +83,22 @@
 
 
 
-<meta name="description" content="hello world！！！">
+<meta name="description" content="拷贝MJ封装的Cycript库 拷贝mjcript.py到/usr/lib/cycript0.9目录中（非登录环境中使用）scp -P 10010 ~/Downloads/课件/工具/mjcript-master/mjcript.cy root@localhost:/usr/lib/cycript0.9  也可以通过iFunBox直接拖拽   SSH登录手机 USB方式映射MAC端口进行SSH登录">
 <meta property="og:type" content="article">
-<meta property="og:title" content="【iOS底层学习02】Cycript">
+<meta property="og:title" content="【iOS底层学习笔记02】Cycript">
 <meta property="og:url" content="http://www.404not.cn/【iOS底层学习02】Cycript.html">
 <meta property="og:site_name" content="404博客">
-<meta property="og:description" content="hello world！！！">
+<meta property="og:description" content="拷贝MJ封装的Cycript库 拷贝mjcript.py到/usr/lib/cycript0.9目录中（非登录环境中使用）scp -P 10010 ~/Downloads/课件/工具/mjcript-master/mjcript.cy root@localhost:/usr/lib/cycript0.9  也可以通过iFunBox直接拖拽   SSH登录手机 USB方式映射MAC端口进行SSH登录">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-23T02:09:32.000Z">
+<meta property="og:image" content="http://www.404not.cn/images/2018-02-10-【iOS底层学习02】Cycript/WX20180224-141405.png">
+<meta property="og:image" content="http://www.404not.cn/images/2018-02-10-【iOS底层学习02】Cycript/WX20180224-114833.png">
+<meta property="og:image" content="http://www.404not.cn/images/2018-02-10-【iOS底层学习02】Cycript/WX20180224-114931.png">
+<meta property="og:image" content="http://www.404not.cn/images/2018-02-10-【iOS底层学习02】Cycript/WX20180224-114945.png">
+<meta property="og:updated_time" content="2018-02-24T06:15:50.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="【iOS底层学习02】Cycript">
-<meta name="twitter:description" content="hello world！！！">
+<meta name="twitter:title" content="【iOS底层学习笔记02】Cycript">
+<meta name="twitter:description" content="拷贝MJ封装的Cycript库 拷贝mjcript.py到/usr/lib/cycript0.9目录中（非登录环境中使用）scp -P 10010 ~/Downloads/课件/工具/mjcript-master/mjcript.cy root@localhost:/usr/lib/cycript0.9  也可以通过iFunBox直接拖拽   SSH登录手机 USB方式映射MAC端口进行SSH登录">
+<meta name="twitter:image" content="http://www.404not.cn/images/2018-02-10-【iOS底层学习02】Cycript/WX20180224-141405.png">
 
 
 
@@ -129,7 +134,7 @@
 
 
 
-  <title>【iOS底层学习02】Cycript | 404博客</title>
+  <title>【iOS底层学习笔记02】Cycript | 404博客</title>
   
 
 
@@ -318,7 +323,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">【iOS底层学习02】Cycript</h2>
+          <h2 class="post-title" itemprop="name headline">【iOS底层学习笔记02】Cycript</h2>
         
 
         <div class="post-meta">
@@ -358,7 +363,7 @@
 
           
           
-             <span id="/【iOS底层学习02】Cycript.html" class="leancloud_visitors" data-flag-title="【iOS底层学习02】Cycript">
+             <span id="/【iOS底层学习02】Cycript.html" class="leancloud_visitors" data-flag-title="【iOS底层学习笔记02】Cycript">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -389,7 +394,140 @@
       
 
       
-        <p>hello world！！！</p>
+        <h1 id="拷贝MJ封装的Cycript库"><a href="#拷贝MJ封装的Cycript库" class="headerlink" title="拷贝MJ封装的Cycript库"></a>拷贝MJ封装的Cycript库</h1><ul>
+<li><p>拷贝<code>mjcript.py</code>到<code>/usr/lib/cycript0.9</code>目录中<strong>（非登录环境中使用）</strong><br><code>scp -P 10010 ~/Downloads/课件/工具/mjcript-master/mjcript.cy root@localhost:/usr/lib/cycript0.9</code></p>
+</li>
+<li><p>也可以通过<code>iFunBox</code>直接拖拽<br><img src="images/2018-02-10-【iOS底层学习02】Cycript/WX20180224-141405.png" alt=""></p>
+</li>
+</ul>
+<h1 id="SSH登录手机"><a href="#SSH登录手机" class="headerlink" title="SSH登录手机"></a>SSH登录手机</h1><ul>
+<li><p>USB方式映射MAC端口进行SSH登录<strong>（初始密码<code>alpine</code>）</strong><br><code>python tcprelay.py -t 22:10010</code><br><code>ssh root@localhost -p 10010</code></p>
+</li>
+<li><p>wifi方式SSH登录</p>
+</li>
+</ul>
+<h1 id="PS获取进程"><a href="#PS获取进程" class="headerlink" title="PS获取进程"></a>PS获取进程</h1><p><code>ps -A</code> 获取所有进程<br><code>ps -A|grep</code> 根据关键字获取进程</p>
+<h1 id="Cycript连接进程"><a href="#Cycript连接进程" class="headerlink" title="Cycript连接进程"></a>Cycript连接进程</h1><p><code>cycript -p 进程名称/进程id</code></p>
+<h1 id="MJ库的导入及使用"><a href="#MJ库的导入及使用" class="headerlink" title="MJ库的导入及使用"></a>MJ库的导入及使用</h1><p><code>@import mjcript</code> 导入<code>MJCript</code>库</p>
+<table>
+<thead>
+<tr>
+<th>方法名</th>
+<th>描述 </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>MJAppId</code></td>
+<td>获取<code>bundleID</code></td>
+</tr>
+<tr>
+<td><code>MJAppPath</code></td>
+<td>获取<code>bundle</code>文件夹路径</td>
+</tr>
+<tr>
+<td><code>MJDocPath</code></td>
+<td>获取<code>document</code>文件夹路径</td>
+</tr>
+<tr>
+<td><code>MJCachesPath</code></td>
+<td>获取<code>caches</code>文件夹路径</td>
+</tr>
+<tr>
+<td><code>MJLoadFramework()</code></td>
+<td>加载OC库</td>
+</tr>
+<tr>
+<td><code>MJKeyWin()</code></td>
+<td>获取<code>keywindow</code></td>
+</tr>
+<tr>
+<td><code>MJRootVc()</code></td>
+<td>获取根控制器</td>
+</tr>
+<tr>
+<td><code>MJFrontVc()</code></td>
+<td>获取最前面的控制器</td>
+</tr>
+<tr>
+<td><code>MJChildVcs()</code></td>
+<td>获取指定控制器的所有子控制器</td>
+</tr>
+<tr>
+<td><code>MJSubviews()</code></td>
+<td>获取指定<code>view</code>的所有子控件</td>
+</tr>
+<tr>
+<td><code>MJIsString()</code></td>
+<td>判断是否是字符串</td>
+</tr>
+<tr>
+<td><code>MJIsArray()</code></td>
+<td>判断是否是数组</td>
+</tr>
+<tr>
+<td><code>MJIsNumber()</code></td>
+<td>判断是否是数字</td>
+</tr>
+<tr>
+<td><code>MJSubclasses()</code></td>
+<td>获取指定类的所有子类</td>
+</tr>
+<tr>
+<td><code>MJInstanceMethodNames()</code></td>
+<td>获取指定对象的所有对象方法</td>
+</tr>
+<tr>
+<td><code>MJClassMethodNames()</code></td>
+<td>获取指定类的所有类方法</td>
+</tr>
+<tr>
+<td><code>MJIvarNames()</code></td>
+<td>获取所有成员变量名称</td>
+</tr>
+<tr>
+<td><code>MJPoint</code></td>
+<td>根据<code>frame</code>获取位置</td>
+</tr>
+<tr>
+<td><code>MJX</code></td>
+<td>根据<code>frame</code>获取<code>X</code>值</td>
+</tr>
+<tr>
+<td><code>MJY</code></td>
+<td>根据<code>frame</code>获取<code>Y</code>值</td>
+</tr>
+<tr>
+<td><code>MJSize</code></td>
+<td>根据<code>frame</code>获取尺寸</td>
+</tr>
+<tr>
+<td><code>MJWidth</code></td>
+<td>根据<code>frame</code>获取宽度</td>
+</tr>
+<tr>
+<td><code>MJHeight</code></td>
+<td>根据<code>frame</code>获取高度</td>
+</tr>
+<tr>
+<td><code>MJPointMake</code></td>
+<td>代替<code>CGPointMake</code>的使用</td>
+</tr>
+<tr>
+<td><code>MJSizeMake</code></td>
+<td>代替<code>CGSizeMake</code>的使用</td>
+</tr>
+<tr>
+<td><code>MJRectMake()</code></td>
+<td>代替<code>CGRectMake</code>的使用</td>
+</tr>
+<tr>
+<td><code>MJLoadFramework()</code></td>
+<td>导入<code>OC</code>库</td>
+</tr>
+</tbody>
+</table>
+<p>#注意<br>所有结构体用类数组类型表示<br><img src="images/2018-02-10-【iOS底层学习02】Cycript/WX20180224-114833.png" alt=""><br>如遇这种情况加个括号获取数值<br><img src="images/2018-02-10-【iOS底层学习02】Cycript/WX20180224-114931.png" alt=""><br><img src="images/2018-02-10-【iOS底层学习02】Cycript/WX20180224-114945.png" alt=""></p>
 
       
     </div>
@@ -526,7 +664,16 @@ var jiathis_config={
       
 
       
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -635,6 +782,22 @@ function zeroPadding(num, digit) {
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#拷贝MJ封装的Cycript库"><span class="nav-number">1.</span> <span class="nav-text">拷贝MJ封装的Cycript库</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#SSH登录手机"><span class="nav-number">2.</span> <span class="nav-text">SSH登录手机</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#PS获取进程"><span class="nav-number">3.</span> <span class="nav-text">PS获取进程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Cycript连接进程"><span class="nav-number">4.</span> <span class="nav-text">Cycript连接进程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#MJ库的导入及使用"><span class="nav-number">5.</span> <span class="nav-text">MJ库的导入及使用</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
