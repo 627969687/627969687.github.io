@@ -72,7 +72,7 @@
 
 
 
-  <meta name="keywords" content="iOS,OC,UIPickerView," />
+  <meta name="keywords" content="iOS,swift,动画," />
 
 
 
@@ -83,19 +83,24 @@
 
 
 
-<meta name="keywords" content="iOS,OC,UIPickerView">
+<meta name="description" content="&amp;emsp;&amp;emsp;很久之前看到过推特的启动动画感觉比较炫酷，趁最近比较闲的情况下写了个demo。 &amp;emsp;&amp;emsp;观察上图我们可以发现推特图标部分透明，推特图标先缩小再放大至全屏">
+<meta name="keywords" content="iOS,swift,动画">
 <meta property="og:type" content="article">
-<meta property="og:title" content="UIPickerView三级联动">
-<meta property="og:url" content="http://www.404not.cn/2017/11/08/Wed Nov 08 2017 10:21:34 GMT+0800.html">
+<meta property="og:title" content="swift-推特启动动画">
+<meta property="og:url" content="http://www.404not.cn/2017/11/16/undefined Date().html">
 <meta property="og:site_name" content="404博客">
+<meta property="og:description" content="&amp;emsp;&amp;emsp;很久之前看到过推特的启动动画感觉比较炫酷，趁最近比较闲的情况下写了个demo。 &amp;emsp;&amp;emsp;观察上图我们可以发现推特图标部分透明，推特图标先缩小再放大至全屏">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://www.404not.cn/2017/11/08/images/2017-11-08-UIPickerView三级联动/WX20171129-114238.png">
-<meta property="og:image" content="http://www.404not.cn/2017/11/08/images/2017-11-08-UIPickerView三级联动/WX20171202-115530.png">
-<meta property="og:image" content="http://www.404not.cn/2017/11/08/images/2017-11-08-UIPickerView三级联动/WX20171202-115530.png">
+<meta property="og:image" content="http://www.404not.cn/2017/11/16/images/2017-11-16-swift-推特启动动画/twitter.gif">
+<meta property="og:image" content="http://www.404not.cn/2017/11/16/images/2017-11-16-swift-推特启动动画/content0.png">
+<meta property="og:image" content="http://www.404not.cn/2017/11/16/images/2017-11-16-swift-推特启动动画/content1.png">
+<meta property="og:image" content="http://www.404not.cn/2017/11/16/images/2017-11-16-swift-推特启动动画/mask0.png">
+<meta property="og:image" content="http://www.404not.cn/2017/11/16/images/2017-11-16-swift-推特启动动画/mask1.png">
 <meta property="og:updated_time" content="2018-02-10T06:38:18.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="UIPickerView三级联动">
-<meta name="twitter:image" content="http://www.404not.cn/2017/11/08/images/2017-11-08-UIPickerView三级联动/WX20171129-114238.png">
+<meta name="twitter:title" content="swift-推特启动动画">
+<meta name="twitter:description" content="&amp;emsp;&amp;emsp;很久之前看到过推特的启动动画感觉比较炫酷，趁最近比较闲的情况下写了个demo。 &amp;emsp;&amp;emsp;观察上图我们可以发现推特图标部分透明，推特图标先缩小再放大至全屏">
+<meta name="twitter:image" content="http://www.404not.cn/2017/11/16/images/2017-11-16-swift-推特启动动画/twitter.gif">
 
 
 
@@ -125,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="http://www.404not.cn/2017/11/08/Wed Nov 08 2017 10:21:34 GMT+0800.html"/>
+  <link rel="canonical" href="http://www.404not.cn/2017/11/16/undefined Date().html"/>
 
 
 
 
 
-  <title>UIPickerView三级联动 | 404博客</title>
+  <title>swift-推特启动动画 | 404博客</title>
   
 
 
@@ -303,7 +308,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.404not.cn/2017/11/08/Wed Nov 08 2017 10:21:34 GMT+0800.html">
+    <link itemprop="mainEntityOfPage" href="http://www.404not.cn/2017/11/16/undefined Date().html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="404NotFound">
@@ -320,7 +325,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">UIPickerView三级联动</h2>
+          <h2 class="post-title" itemprop="name headline">swift-推特启动动画</h2>
         
 
         <div class="post-meta">
@@ -332,8 +337,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-08T10:21:34+08:00">
-                2017-11-08
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-16T15:01:40+08:00">
+                2017-11-16
               </time>
             
 
@@ -366,8 +371,8 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/iOS/OC/" itemprop="url" rel="index">
-                    <span itemprop="name">OC</span>
+                  <a href="/categories/iOS/swift/" itemprop="url" rel="index">
+                    <span itemprop="name">swift</span>
                   </a>
                 </span>
 
@@ -377,19 +382,8 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/iOS/OC/控件/" itemprop="url" rel="index">
-                    <span itemprop="name">控件</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/iOS/OC/控件/UIPickerView/" itemprop="url" rel="index">
-                    <span itemprop="name">UIPickerView</span>
+                  <a href="/categories/iOS/swift/动画/" itemprop="url" rel="index">
+                    <span itemprop="name">动画</span>
                   </a>
                 </span>
 
@@ -406,8 +400,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/11/08/Wed Nov 08 2017 10:21:34 GMT+0800.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count gitment-comments-count" data-xid="/2017/11/08/Wed Nov 08 2017 10:21:34 GMT+0800.html" itemprop="commentsCount"></span>
+                <a href="/2017/11/16/undefined Date().html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2017/11/16/undefined Date().html" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -415,7 +409,7 @@
 
           
           
-             <span id="/2017/11/08/Wed Nov 08 2017 10:21:34 GMT+0800.html" class="leancloud_visitors" data-flag-title="UIPickerView三级联动">
+             <span id="/2017/11/16/undefined Date().html" class="leancloud_visitors" data-flag-title="swift-推特启动动画">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -446,72 +440,40 @@
       
 
       
-        <p><img src="images/2017-11-08-UIPickerView三级联动/WX20171129-114238.png" alt=""><br><a id="more"></a><br>前几天朋友要求帮忙使用<code>OC</code>写一个&lt;省-市-区&gt;的<code>UIPickerView</code>控件，写完之后这里给大家讲一下思路和遇到的问题…..</p>
-<p><a href="files/2017-11-08-UIPickerView三级联动/files.zip">数据</a>是由朋友提供，这里已经把数据保存到本地，请参考《<a href="http://tk_jacky.gitee.io/macOS%E7%8E%AF%E5%A2%83%E7%94%9F%E6%88%90json%E5%81%87%E6%95%B0%E6%8D%AE.html" target="_blank" rel="noopener">macOS环境生成json假数据</a>》制作假数据</p>
-<h1 id="数据"><a href="#数据" class="headerlink" title="数据"></a>数据</h1><p><img src="images/2017-11-08-UIPickerView三级联动/WX20171202-115530.png" alt=""><br><img src="images/2017-11-08-UIPickerView三级联动/WX20171202-115530.png" alt=""></p>
-<p>观察数据格式，我们可以发现省、市、区的名字由<code>name</code>这个键值对控制，每个省/市下有多少个市/区由<code>children</code>控制</p>
-<p>获取数据过程中，我们可能会遇到以下问题：</p>
-<ul>
-<li>初次运行网络问题</li>
-<li>text/html格式问题</li>
-<li>null数据处理</li>
-</ul>
-<p>关于数据的处理，我们使用了<a href="https://github.com/AFNetworking/AFNetworking" target="_blank" rel="noopener">AFNetworking</a>和<a href="https://github.com/CoderMJLee/MJExtension" target="_blank" rel="noopener">MJExtension</a>框架</p>
-<h1 id="具体实现"><a href="#具体实现" class="headerlink" title="具体实现"></a>具体实现</h1><p>定义省、市、区的数据源</p>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@property</span>(<span class="keyword">nonatomic</span>,<span class="keyword">strong</span>)<span class="built_in">NSArray</span>&lt;ProvinceModel *&gt; *provinceArr; <span class="comment">// 省</span></span><br><span class="line"><span class="keyword">@property</span>(<span class="keyword">nonatomic</span>,<span class="keyword">strong</span>)<span class="built_in">NSArray</span>&lt;CityModel *&gt; *cityArr; <span class="comment">// 市</span></span><br><span class="line"><span class="keyword">@property</span>(<span class="keyword">nonatomic</span>,<span class="keyword">strong</span>)<span class="built_in">NSArray</span>&lt;AreaModel *&gt; *areaArr; <span class="comment">// 区</span></span><br></pre></td></tr></table></figure>
-<p>省、市、区初始加载的数据源为第一个省的第一个市的第一个区</p>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#pragma mark - 加载数据</span></span><br><span class="line">- (<span class="keyword">void</span>)loadData &#123;</span><br><span class="line">    AFHTTPSessionManager *mgr = [AFHTTPSessionManager js_mgr];</span><br><span class="line">    <span class="comment">// 参考假数据实现《http://192.168.11.128/getArea.html》</span></span><br><span class="line">    [mgr GET:<span class="string">@"http://192.168.11.128/getArea.html"</span> parameters:<span class="literal">nil</span> progress:<span class="literal">nil</span> success:^(<span class="built_in">NSURLSessionDataTask</span> * _Nonnull task, <span class="built_in">NSDictionary</span> *result) &#123;</span><br><span class="line">        <span class="comment">// 省</span></span><br><span class="line">        <span class="keyword">self</span>.provinceArr = [ProvinceModel mj_objectArrayWithKeyValuesArray:result[<span class="string">@"resultInfo"</span>]];</span><br><span class="line">        <span class="comment">// 市</span></span><br><span class="line">        <span class="keyword">self</span>.cityArr = <span class="keyword">self</span>.provinceArr.firstObject.children;</span><br><span class="line">        <span class="comment">// 区</span></span><br><span class="line">        <span class="keyword">self</span>.areaArr = <span class="keyword">self</span>.cityArr.firstObject.children;</span><br><span class="line">        <span class="comment">// 刷新</span></span><br><span class="line">        [<span class="keyword">self</span>.pickerView reloadAllComponents];</span><br><span class="line">        <span class="comment">// 停止网络监听</span></span><br><span class="line">        [[AFNetworkReachabilityManager sharedManager] stopMonitoring];</span><br><span class="line">    &#125; failure:^(<span class="built_in">NSURLSessionDataTask</span> * _Nullable task, <span class="built_in">NSError</span> * _Nonnull error) &#123;</span><br><span class="line">        [[AFNetworkReachabilityManager sharedManager] stopMonitoring];</span><br><span class="line">    &#125;];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>设置数据显示</p>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 列数</span></span><br><span class="line">- (<span class="built_in">NSInteger</span>)numberOfComponentsInPickerView:(<span class="built_in">UIPickerView</span> *)pickerView &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">3</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 每列有多少行</span></span><br><span class="line">- (<span class="built_in">NSInteger</span>)pickerView:(<span class="built_in">UIPickerView</span> *)pickerView numberOfRowsInComponent:(<span class="built_in">NSInteger</span>)component &#123;</span><br><span class="line">    <span class="built_in">NSInteger</span> ret = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">switch</span> (component) &#123;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">0</span>: <span class="comment">// 省</span></span><br><span class="line">            ret = <span class="keyword">self</span>.provinceArr.count;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">1</span>: <span class="comment">// 市</span></span><br><span class="line">            ret = <span class="keyword">self</span>.cityArr.count;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">2</span>: <span class="comment">// 区</span></span><br><span class="line">            ret = <span class="keyword">self</span>.areaArr.count;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 返回每一行的内容</span></span><br><span class="line">- (<span class="built_in">NSString</span> *)pickerView:(<span class="built_in">UIPickerView</span> *)pickerView titleForRow:(<span class="built_in">NSInteger</span>)row forComponent:(<span class="built_in">NSInteger</span>)component &#123;</span><br><span class="line">    <span class="built_in">NSString</span> *ret = <span class="string">@""</span>;</span><br><span class="line">    <span class="keyword">switch</span> (component) &#123;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">0</span>:</span><br><span class="line">            ret = <span class="keyword">self</span>.provinceArr[row].name;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">            ret = <span class="keyword">self</span>.cityArr[row].name;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">            ret = <span class="keyword">self</span>.areaArr[row].name;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>选中哪一个省都要根据当前选择的第几行去更新市的数据源，同理更新区的数据源</p>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 滑动或点击选择，确认pickerView选中结果</span></span><br><span class="line">- (<span class="keyword">void</span>)pickerView:(<span class="built_in">UIPickerView</span> *)pickerView didSelectRow:(<span class="built_in">NSInteger</span>)row inComponent:(<span class="built_in">NSInteger</span>)component &#123;</span><br><span class="line">    <span class="keyword">switch</span> (component) &#123;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">0</span>: <span class="comment">// 省</span></span><br><span class="line">            <span class="keyword">self</span>.cityArr = <span class="keyword">self</span>.provinceArr[row].children;</span><br><span class="line">            <span class="keyword">self</span>.areaArr = <span class="keyword">self</span>.cityArr.firstObject.children;</span><br><span class="line">            </span><br><span class="line">            [<span class="keyword">self</span>.pickerView reloadAllComponents];</span><br><span class="line">            [<span class="keyword">self</span>.pickerView selectRow:<span class="number">0</span> inComponent:<span class="number">1</span> animated:<span class="literal">false</span>];</span><br><span class="line">            [<span class="keyword">self</span>.pickerView selectRow:<span class="number">0</span> inComponent:<span class="number">2</span> animated:<span class="literal">false</span>];</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">1</span>: <span class="comment">// 市</span></span><br><span class="line">            <span class="keyword">self</span>.areaArr = <span class="keyword">self</span>.cityArr[row].children;</span><br><span class="line">            </span><br><span class="line">            [<span class="keyword">self</span>.pickerView reloadAllComponents];</span><br><span class="line">            [<span class="keyword">self</span>.pickerView selectRow:<span class="number">0</span> inComponent:<span class="number">2</span> animated:<span class="literal">false</span>];</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">2</span>: <span class="comment">// 区</span></span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><table>
-<thead>
-<tr>
-<th>原生</th>
-<th>资料</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>UIPickerView</td>
-<td><a href="http://www.cnblogs.com/jukaiit/p/5213499.html" target="_blank" rel="noopener">UIPickerView的使用(一)</a></td>
-</tr>
-</tbody>
-</table>
+        <p><img src="images/2017-11-16-swift-推特启动动画/twitter.gif" alt=""></p>
+<p>&emsp;&emsp;很久之前看到过推特的启动动画感觉比较炫酷，趁最近比较闲的情况下写了个demo。</p>
+<p>&emsp;&emsp;观察上图我们可以发现推特图标部分透明，推特图标先缩小再放大至全屏<br><a id="more"></a></p>
+<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>&emsp;&emsp;实现推特图标透明和动画前，我们先把背景弄一下吧<br>&emsp;&emsp;推特的主界面这里就先用一张图标代表，实际项目中自己再实现具体逻辑吧</p>
+<p>&emsp;&emsp;<code>Main.storyboard</code>中使用<code>UIImageView</code>充当内容<code>view</code>并设置背景<code>view</code>的颜色</p>
+<p><img src="images/2017-11-16-swift-推特启动动画/content0.png" alt=""><br><img src="images/2017-11-16-swift-推特启动动画/content1.png" alt=""></p>
+<h1 id="推特图标"><a href="#推特图标" class="headerlink" title="推特图标"></a>推特图标</h1><p>&emsp;&emsp;透明推特图标的实现主要是设置<code>CALayer</code>的<code>mask</code>图层。</p>
+<p><strong>需要用到的API：</strong></p>
 <table>
 <thead>
 <tr>
-<th>第三方库</th>
-<th>资料</th>
+<th>CALayer</th>
+<th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>AFNetworking</td>
-<td><a href="">AFNetworking使用</a></td>
-</tr>
-<tr>
-<td>MJExtension</td>
-<td><a href="https://github.com/CoderMJLee/MJExtension" target="_blank" rel="noopener">MJExtension官方文档</a></td>
+<td>mask</td>
+<td>被mask的图层以mask图层的非透明部分显示</td>
 </tr>
 </tbody>
 </table>
-<table>
-<thead>
-<tr>
-<th>其他</th>
-<th>资料</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>假数据</td>
-<td><a href="http://tk_jacky.gitee.io/macOS%E7%8E%AF%E5%A2%83%E7%94%9F%E6%88%90json%E5%81%87%E6%95%B0%E6%8D%AE.html" target="_blank" rel="noopener">macOS环境生成json假数据</a></td>
-</tr>
-</tbody>
-</table>
-<p><br><br><a href="https://github.com/627969687/UIPickerView_three_level" target="_blank" rel="noopener">demo下载</a></p>
+<p><img src="images/2017-11-16-swift-推特启动动画/mask0.png" alt=""></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ViewController</span>: <span class="title">UIViewController</span> </span>&#123;</span><br><span class="line">    <span class="meta">@IBOutlet</span> <span class="keyword">weak</span> <span class="keyword">var</span> contentV: <span class="type">UIImageView</span>!</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">lazy</span> <span class="keyword">var</span> maskLayer: <span class="type">CALayer</span> = &#123;</span><br><span class="line">        <span class="keyword">let</span> temp = <span class="type">CALayer</span>()</span><br><span class="line">        temp.bounds = <span class="type">CGRect</span>(x: <span class="number">0</span>, y: <span class="number">0</span>, width: <span class="number">120</span>, height: <span class="number">93</span>);</span><br><span class="line">        temp.contents = #imageLiteral(resourceName: <span class="string">"twitter logo mask"</span>).cgImage</span><br><span class="line">        <span class="keyword">return</span> temp</span><br><span class="line">    &#125;()</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">override</span> <span class="function"><span class="keyword">func</span> <span class="title">viewDidLoad</span><span class="params">()</span></span> &#123;</span><br><span class="line">        <span class="keyword">super</span>.viewDidLoad()</span><br><span class="line">        setupUI()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">extension</span> <span class="title">ViewController</span> </span>&#123;</span><br><span class="line">    <span class="keyword">fileprivate</span> <span class="function"><span class="keyword">func</span> <span class="title">setupUI</span> <span class="params">()</span></span> &#123;</span><br><span class="line">        maskLayer.position = view.center</span><br><span class="line">        contentV.layer.mask = maskLayer</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>效果如下：<br><img src="images/2017-11-16-swift-推特启动动画/mask1.png" alt=""></p>
+<h1 id="动画"><a href="#动画" class="headerlink" title="动画"></a>动画</h1><p>&emsp;&emsp;既然是多个动画顺序执行，那么这边就使用<code>CAKeyframeAnimation</code>帧动画的形式进行构建</p>
+<p>&emsp;&emsp;缩小动画呈现的是慢进慢出的效果并且整体动画有个延迟执行。<br>&emsp;&emsp;<strong>慢进慢出：</strong><code>kCAMediaTimingFunctionEaseInEaseOut</code><br>&emsp;&emsp;<strong>延迟执行：</strong><code>anim.beginTime = CACurrentMediaTime() + 0.5</code></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> anim = <span class="type">CAKeyframeAnimation</span>(keyPath: <span class="string">"transform.scale"</span>)</span><br><span class="line"><span class="keyword">let</span> begin = <span class="number">1.0</span></span><br><span class="line"><span class="keyword">let</span> middle = <span class="number">0.8</span></span><br><span class="line">    </span><br><span class="line">anim.beginTime = <span class="type">CACurrentMediaTime</span>() + <span class="number">0.5</span></span><br><span class="line">anim.duration = <span class="number">1.5</span></span><br><span class="line">anim.values = [begin,middle]</span><br><span class="line">anim.keyTimes = [<span class="number">0</span>,<span class="number">0.2</span>]</span><br><span class="line">anim.timingFunctions = [<span class="type">CAMediaTimingFunction</span>(name: kCAMediaTimingFunctionEaseInEaseOut)]</span><br><span class="line">anim.isRemovedOnCompletion = <span class="literal">false</span></span><br><span class="line">anim.fillMode = kCAFillModeForwards</span><br><span class="line">anim.delegate = <span class="keyword">self</span></span><br><span class="line">maskLayer.add(anim, forKey: <span class="literal">nil</span>)</span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;放大动画呈现慢出效果<br>&emsp;&emsp;<strong><code>values</code>添加放大的值</strong><br>&emsp;&emsp;<strong><code>timingFunctions</code>添加<code>kCAMediaTimingFunctionEaseOut</code></strong></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> end = screenH / <span class="built_in">min</span>(maskLayer.w(), maskLayer.h()) * <span class="number">3</span></span><br><span class="line">anim.values = [begin,middle,end]</span><br><span class="line">anim.timingFunctions = [<span class="type">CAMediaTimingFunction</span>(name: kCAMediaTimingFunctionEaseInEaseOut),<span class="type">CAMediaTimingFunction</span>(name: kCAMediaTimingFunctionEaseOut)]</span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;动画完成移除推特图标</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">extension</span> <span class="title">ViewController</span>:<span class="title">CAAnimationDelegate</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">func</span> <span class="title">animationDidStop</span><span class="params">(<span class="number">_</span> anim: CAAnimation, finished flag: Bool)</span></span> &#123;</span><br><span class="line">        contentV.layer.mask = <span class="literal">nil</span></span><br><span class="line">        maskLayer.removeFromSuperlayer()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="整体代码"><a href="#整体代码" class="headerlink" title="整体代码"></a>整体代码</h1><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//  ViewController.swift</span></span><br><span class="line"><span class="comment">//  TwitterLaunch</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//  Created by 荣 Jason on 2017/11/16.</span></span><br><span class="line"><span class="comment">//  Copyright © 2017年 荣 Jason. All rights reserved.</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> UIKit</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> screenH = <span class="type">UIScreen</span>.main.bounds.size.height</span><br><span class="line"></span><br><span class="line"><span class="comment">// MARK: - 工具类</span></span><br><span class="line"><span class="class"><span class="keyword">extension</span> <span class="title">CALayer</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">func</span> <span class="title">w</span><span class="params">()</span></span> -&gt; <span class="type">CGFloat</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> frame.size.width</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">func</span> <span class="title">h</span><span class="params">()</span></span> -&gt; <span class="type">CGFloat</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> frame.size.height</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// MARK: - 正文</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ViewController</span>: <span class="title">UIViewController</span> </span>&#123;</span><br><span class="line">    <span class="meta">@IBOutlet</span> <span class="keyword">weak</span> <span class="keyword">var</span> contentV: <span class="type">UIImageView</span>!</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">lazy</span> <span class="keyword">var</span> maskLayer: <span class="type">CALayer</span> = &#123;</span><br><span class="line">        <span class="keyword">let</span> temp = <span class="type">CALayer</span>()</span><br><span class="line">        temp.bounds = <span class="type">CGRect</span>(x: <span class="number">0</span>, y: <span class="number">0</span>, width: <span class="number">120</span>, height: <span class="number">93</span>);</span><br><span class="line">        temp.contents = #imageLiteral(resourceName: <span class="string">"twitter logo mask"</span>).cgImage</span><br><span class="line">        <span class="keyword">return</span> temp</span><br><span class="line">    &#125;()</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">override</span> <span class="function"><span class="keyword">func</span> <span class="title">viewDidLoad</span><span class="params">()</span></span> &#123;</span><br><span class="line">        <span class="keyword">super</span>.viewDidLoad()</span><br><span class="line">        setupUI()</span><br><span class="line">        setupAnim()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">extension</span> <span class="title">ViewController</span> </span>&#123;</span><br><span class="line">    <span class="keyword">fileprivate</span> <span class="function"><span class="keyword">func</span> <span class="title">setupUI</span> <span class="params">()</span></span> &#123;</span><br><span class="line">        maskLayer.position = view.center</span><br><span class="line">        contentV.layer.mask = maskLayer</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">extension</span> <span class="title">ViewController</span> </span>&#123;</span><br><span class="line">    <span class="keyword">fileprivate</span> <span class="function"><span class="keyword">func</span> <span class="title">setupAnim</span><span class="params">()</span></span> &#123;</span><br><span class="line">        <span class="keyword">let</span> anim = <span class="type">CAKeyframeAnimation</span>(keyPath: <span class="string">"transform.scale"</span>)</span><br><span class="line">        <span class="keyword">let</span> begin = <span class="number">1.0</span></span><br><span class="line">        <span class="keyword">let</span> middle = <span class="number">0.8</span></span><br><span class="line">        <span class="keyword">let</span> end = screenH / <span class="built_in">min</span>(maskLayer.w(), maskLayer.h()) * <span class="number">3</span></span><br><span class="line">        </span><br><span class="line">        anim.beginTime = <span class="type">CACurrentMediaTime</span>() + <span class="number">0.5</span></span><br><span class="line">        anim.duration = <span class="number">1.5</span></span><br><span class="line">        anim.values = [begin,middle,end]</span><br><span class="line">        anim.keyTimes = [<span class="number">0</span>,<span class="number">0.2</span>,<span class="number">0.5</span>]</span><br><span class="line">        anim.timingFunctions = [<span class="type">CAMediaTimingFunction</span>(name: kCAMediaTimingFunctionEaseInEaseOut),<span class="type">CAMediaTimingFunction</span>(name: kCAMediaTimingFunctionEaseOut)]</span><br><span class="line">        anim.isRemovedOnCompletion = <span class="literal">false</span></span><br><span class="line">        anim.fillMode = kCAFillModeForwards</span><br><span class="line">        anim.delegate = <span class="keyword">self</span></span><br><span class="line">        maskLayer.add(anim, forKey: <span class="literal">nil</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">extension</span> <span class="title">ViewController</span>:<span class="title">CAAnimationDelegate</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">func</span> <span class="title">animationDidStop</span><span class="params">(<span class="number">_</span> anim: CAAnimation, finished flag: Bool)</span></span> &#123;</span><br><span class="line">        contentV.layer.mask = <span class="literal">nil</span></span><br><span class="line">        maskLayer.removeFromSuperlayer()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><br><br><a href="https://github.com/627969687/TwitterLaunch" target="_blank" rel="noopener">demo下载</a></p>
 
       
     </div>
@@ -551,10 +513,10 @@
             <a href="/tags/iOS/" rel="tag" style="background-color: #6F6F6F;color: white;border-radius: 3px;padding: 0px 8px;font-size: 10px;"> iOS</a>
             
           
-            <a href="/tags/OC/" rel="tag" style="background-color: #6F6F6F;color: white;border-radius: 3px;padding: 0px 8px;font-size: 10px;"> OC</a>
+            <a href="/tags/swift/" rel="tag" style="background-color: #6F6F6F;color: white;border-radius: 3px;padding: 0px 8px;font-size: 10px;"> swift</a>
             
           
-            <a href="/tags/UIPickerView/" rel="tag" style="background-color: #6F6F6F;color: white;border-radius: 3px;padding: 0px 8px;font-size: 10px;"> UIPickerView</a>
+            <a href="/tags/动画/" rel="tag" style="background-color: #6F6F6F;color: white;border-radius: 3px;padding: 0px 8px;font-size: 10px;"> 动画</a>
             
           
         </div>
@@ -568,8 +530,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/11/07/Tue Nov 07 2017 09:37:41 GMT+0800.html" rel="next" title="macOS环境生成json假数据">
-                <i class="fa fa-chevron-left"></i> macOS环境生成json假数据
+              <a href="/2017/11/08/undefined Date().html" rel="next" title="UIPickerView三级联动">
+                <i class="fa fa-chevron-left"></i> UIPickerView三级联动
               </a>
             
           </div>
@@ -578,8 +540,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/11/16/Thu Nov 16 2017 15:01:40 GMT+0800.html" rel="prev" title="swift-推特启动动画">
-                swift-推特启动动画 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/12/13/undefined Date().html" rel="prev" title="next-侧边栏时钟">
+                next-侧边栏时钟 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -793,7 +755,7 @@ function zeroPadding(num, digit) {
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#数据"><span class="nav-number">1.</span> <span class="nav-text">数据</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#具体实现"><span class="nav-number">2.</span> <span class="nav-text">具体实现</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考文献"><span class="nav-number">3.</span> <span class="nav-text">参考文献</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#背景"><span class="nav-number">1.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#推特图标"><span class="nav-number">2.</span> <span class="nav-text">推特图标</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#动画"><span class="nav-number">3.</span> <span class="nav-text">动画</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#整体代码"><span class="nav-number">4.</span> <span class="nav-text">整体代码</span></a></li></ol></div>
             
 
           </div>
