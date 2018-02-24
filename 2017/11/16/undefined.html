@@ -72,7 +72,7 @@
 
 
 
-  <meta name="keywords" content="技术,个人" />
+  <meta name="keywords" content="iOS,swift,动画," />
 
 
 
@@ -83,22 +83,24 @@
 
 
 
-<meta name="description" content="拷贝MJ封装的Cycript库 拷贝mjcript.py到/usr/lib/cycript0.9目录中（非登录环境中使用）  1scp -P 10010 ~/Downloads/课件/工具/mjcript-master/mjcript.cy root@localhost:/usr/lib/cycript0.9">
+<meta name="description" content="&amp;emsp;&amp;emsp;很久之前看到过推特的启动动画感觉比较炫酷，趁最近比较闲的情况下写了个demo。 &amp;emsp;&amp;emsp;观察上图我们可以发现推特图标部分透明，推特图标先缩小再放大至全屏">
+<meta name="keywords" content="iOS,swift,动画">
 <meta property="og:type" content="article">
-<meta property="og:title" content="【iOS底层笔记02】Cycript">
-<meta property="og:url" content="http://www.404not.cn/2018/02/10.html">
+<meta property="og:title" content="swift-推特启动动画">
+<meta property="og:url" content="http://www.404not.cn/2017/11/16/undefined.html">
 <meta property="og:site_name" content="404博客">
-<meta property="og:description" content="拷贝MJ封装的Cycript库 拷贝mjcript.py到/usr/lib/cycript0.9目录中（非登录环境中使用）  1scp -P 10010 ~/Downloads/课件/工具/mjcript-master/mjcript.cy root@localhost:/usr/lib/cycript0.9">
+<meta property="og:description" content="&amp;emsp;&amp;emsp;很久之前看到过推特的启动动画感觉比较炫酷，趁最近比较闲的情况下写了个demo。 &amp;emsp;&amp;emsp;观察上图我们可以发现推特图标部分透明，推特图标先缩小再放大至全屏">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://www.404not.cn/2018/02/images/2018-02-10-【iOS底层学习02】Cycript/WX20180224-141405.png">
-<meta property="og:image" content="http://www.404not.cn/2018/02/images/2018-02-10-【iOS底层学习02】Cycript/WX20180224-114833.png">
-<meta property="og:image" content="http://www.404not.cn/2018/02/images/2018-02-10-【iOS底层学习02】Cycript/WX20180224-114931.png">
-<meta property="og:image" content="http://www.404not.cn/2018/02/images/2018-02-10-【iOS底层学习02】Cycript/WX20180224-114945.png">
-<meta property="og:updated_time" content="2018-02-24T09:33:52.000Z">
+<meta property="og:image" content="http://www.404not.cn/2017/11/16/images/2017-11-16-swift-推特启动动画/twitter.gif">
+<meta property="og:image" content="http://www.404not.cn/2017/11/16/images/2017-11-16-swift-推特启动动画/content0.png">
+<meta property="og:image" content="http://www.404not.cn/2017/11/16/images/2017-11-16-swift-推特启动动画/content1.png">
+<meta property="og:image" content="http://www.404not.cn/2017/11/16/images/2017-11-16-swift-推特启动动画/mask0.png">
+<meta property="og:image" content="http://www.404not.cn/2017/11/16/images/2017-11-16-swift-推特启动动画/mask1.png">
+<meta property="og:updated_time" content="2018-02-10T06:38:18.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="【iOS底层笔记02】Cycript">
-<meta name="twitter:description" content="拷贝MJ封装的Cycript库 拷贝mjcript.py到/usr/lib/cycript0.9目录中（非登录环境中使用）  1scp -P 10010 ~/Downloads/课件/工具/mjcript-master/mjcript.cy root@localhost:/usr/lib/cycript0.9">
-<meta name="twitter:image" content="http://www.404not.cn/2018/02/images/2018-02-10-【iOS底层学习02】Cycript/WX20180224-141405.png">
+<meta name="twitter:title" content="swift-推特启动动画">
+<meta name="twitter:description" content="&amp;emsp;&amp;emsp;很久之前看到过推特的启动动画感觉比较炫酷，趁最近比较闲的情况下写了个demo。 &amp;emsp;&amp;emsp;观察上图我们可以发现推特图标部分透明，推特图标先缩小再放大至全屏">
+<meta name="twitter:image" content="http://www.404not.cn/2017/11/16/images/2017-11-16-swift-推特启动动画/twitter.gif">
 
 
 
@@ -128,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="http://www.404not.cn/2018/02/10.html"/>
+  <link rel="canonical" href="http://www.404not.cn/2017/11/16/undefined.html"/>
 
 
 
 
 
-  <title>【iOS底层笔记02】Cycript | 404博客</title>
+  <title>swift-推特启动动画 | 404博客</title>
   
 
 
@@ -306,7 +308,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.404not.cn/2018/02/10.html">
+    <link itemprop="mainEntityOfPage" href="http://www.404not.cn/2017/11/16/undefined.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="404NotFound">
@@ -323,7 +325,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">【iOS底层笔记02】Cycript</h2>
+          <h2 class="post-title" itemprop="name headline">swift-推特启动动画</h2>
         
 
         <div class="post-meta">
@@ -335,8 +337,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-10T14:43:33+08:00">
-                2018-02-10
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-16T15:01:40+08:00">
+                2017-11-16
               </time>
             
 
@@ -346,6 +348,50 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/iOS/" itemprop="url" rel="index">
+                    <span itemprop="name">iOS</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/iOS/swift/" itemprop="url" rel="index">
+                    <span itemprop="name">swift</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/iOS/swift/动画/" itemprop="url" rel="index">
+                    <span itemprop="name">动画</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -354,8 +400,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/02/10.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/02/10.html" itemprop="commentsCount"></span>
+                <a href="/2017/11/16/undefined.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2017/11/16/undefined.html" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -363,7 +409,7 @@
 
           
           
-             <span id="/2018/02/10.html" class="leancloud_visitors" data-flag-title="【iOS底层笔记02】Cycript">
+             <span id="/2017/11/16/undefined.html" class="leancloud_visitors" data-flag-title="swift-推特启动动画">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -394,190 +440,40 @@
       
 
       
-        <h1 id="拷贝MJ封装的Cycript库"><a href="#拷贝MJ封装的Cycript库" class="headerlink" title="拷贝MJ封装的Cycript库"></a>拷贝MJ封装的Cycript库</h1><ul>
-<li>拷贝<code>mjcript.py</code>到<code>/usr/lib/cycript0.9</code>目录中<strong>（非登录环境中使用）</strong></li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp -P <span class="number">10010</span> ~<span class="regexp">/Downloads/</span>课件/工具/mjcript-master/mjcript.cy root@localhost:<span class="regexp">/usr/</span>lib/cycript0<span class="number">.9</span></span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<ul>
-<li>也可以通过<code>iFunBox</code>直接拖拽<br><img src="images/2018-02-10-【iOS底层学习02】Cycript/WX20180224-141405.png" alt=""></li>
-</ul>
-<h1 id="SSH登录手机"><a href="#SSH登录手机" class="headerlink" title="SSH登录手机"></a>SSH登录手机</h1><ul>
-<li><p>USB方式映射MAC端口进行SSH登录<strong>（初始密码<code>alpine</code>）</strong></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">python tcprelay.py -t <span class="number">22</span>:<span class="number">10010</span></span><br><span class="line">ssh root@localhost -p <span class="number">10010</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>wifi方式SSH登录</p>
-</li>
-</ul>
-<h1 id="PS获取进程"><a href="#PS获取进程" class="headerlink" title="PS获取进程"></a>PS获取进程</h1><table>
+        <p><img src="images/2017-11-16-swift-推特启动动画/twitter.gif" alt=""></p>
+<p>&emsp;&emsp;很久之前看到过推特的启动动画感觉比较炫酷，趁最近比较闲的情况下写了个demo。</p>
+<p>&emsp;&emsp;观察上图我们可以发现推特图标部分透明，推特图标先缩小再放大至全屏<br><a id="more"></a></p>
+<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>&emsp;&emsp;实现推特图标透明和动画前，我们先把背景弄一下吧<br>&emsp;&emsp;推特的主界面这里就先用一张图标代表，实际项目中自己再实现具体逻辑吧</p>
+<p>&emsp;&emsp;<code>Main.storyboard</code>中使用<code>UIImageView</code>充当内容<code>view</code>并设置背景<code>view</code>的颜色</p>
+<p><img src="images/2017-11-16-swift-推特启动动画/content0.png" alt=""><br><img src="images/2017-11-16-swift-推特启动动画/content1.png" alt=""></p>
+<h1 id="推特图标"><a href="#推特图标" class="headerlink" title="推特图标"></a>推特图标</h1><p>&emsp;&emsp;透明推特图标的实现主要是设置<code>CALayer</code>的<code>mask</code>图层。</p>
+<p><strong>需要用到的API：</strong></p>
+<table>
 <thead>
 <tr>
-<th>PS命令</th>
+<th>CALayer</th>
 <th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>ps -A</td>
-<td>获取所有进程</td>
-</tr>
-<tr>
-<td>ps -A&#124;grep</td>
-<td>根据关键字获取进程</td>
+<td>mask</td>
+<td>被mask的图层以mask图层的非透明部分显示</td>
 </tr>
 </tbody>
 </table>
-<h1 id="Cycript连接进程"><a href="#Cycript连接进程" class="headerlink" title="Cycript连接进程"></a>Cycript连接进程</h1><p><code>cycript -p</code> 进程名称/进程id</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cycript -p WeChat <span class="comment">// 连接微信</span></span><br></pre></td></tr></table></figure>
-<h1 id="MJ库的导入及使用"><a href="#MJ库的导入及使用" class="headerlink" title="MJ库的导入及使用"></a>MJ库的导入及使用</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">import</span> mjcript <span class="comment">// 导入MJCript库</span></span><br></pre></td></tr></table></figure>
-<table>
-<thead>
-<tr>
-<th>基本</th>
-<th>描述 </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>MJLoadFramework()</td>
-<td>加载OC库</td>
-</tr>
-<tr>
-<td>MJAppId</td>
-<td>获取<code>bundleID</code></td>
-</tr>
-<tr>
-<td>MJAppPath</td>
-<td>获取<code>bundle</code>文件夹路径</td>
-</tr>
-<tr>
-<td>MJDocPath</td>
-<td>获取<code>document</code>文件夹路径</td>
-</tr>
-<tr>
-<td>MJCachesPath</td>
-<td>获取<code>caches</code>文件夹路径</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>对象/类相关</th>
-<th>描述 </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>MJKeyWin()</td>
-<td>获取<code>keywindow</code></td>
-</tr>
-<tr>
-<td>MJRootVc()</td>
-<td>获取根控制器</td>
-</tr>
-<tr>
-<td>MJFrontVc()</td>
-<td>获取最前面的控制器</td>
-</tr>
-<tr>
-<td>MJChildVcs()</td>
-<td>获取指定控制器的所有子控制器</td>
-</tr>
-<tr>
-<td>MJSubviews()</td>
-<td>获取指定<code>view</code>的所有子控件</td>
-</tr>
-<tr>
-<td>MJSubclasses()</td>
-<td>获取指定类的所有子类</td>
-</tr>
-<tr>
-<td>MJIvarNames()</td>
-<td>获取所有成员变量名称</td>
-</tr>
-<tr>
-<td>MJInstanceMethodNames()</td>
-<td>获取指定对象的所有对象方法</td>
-</tr>
-<tr>
-<td>MJClassMethodNames()</td>
-<td>获取指定类的所有类方法</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>类型判断相关</th>
-<th>描述 </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>MJIsString()</td>
-<td>判断是否是字符串</td>
-</tr>
-<tr>
-<td>MJIsArray()</td>
-<td>判断是否是数组</td>
-</tr>
-<tr>
-<td>MJIsNumber()</td>
-<td>判断是否是数字</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>CGRect相关</th>
-<th>描述 </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>MJPoint</td>
-<td>根据<code>frame</code>获取位置（个人新增）</td>
-</tr>
-<tr>
-<td>MJX</td>
-<td>根据<code>frame</code>获取<code>X</code>值（个人新增）</td>
-</tr>
-<tr>
-<td>MJY</td>
-<td>根据<code>frame</code>获取<code>Y</code>值（个人新增）</td>
-</tr>
-<tr>
-<td>MJSize</td>
-<td>根据<code>frame</code>获取尺寸（个人新增）</td>
-</tr>
-<tr>
-<td>MJWidth</td>
-<td>根据<code>frame</code>获取宽度（个人新增）</td>
-</tr>
-<tr>
-<td>MJHeight</td>
-<td>根据<code>frame</code>获取高度（个人新增）</td>
-</tr>
-<tr>
-<td>MJPointMake</td>
-<td>代替<code>CGPointMake</code>的使用</td>
-</tr>
-<tr>
-<td>MJSizeMake</td>
-<td>代替<code>CGSizeMake</code>的使用</td>
-</tr>
-<tr>
-<td>MJRectMake()</td>
-<td>代替<code>CGRectMake</code>的使用</td>
-</tr>
-</tbody>
-</table>
-<h1 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h1><ul>
-<li>所有结构体用类数组类型表示<br><img src="images/2018-02-10-【iOS底层学习02】Cycript/WX20180224-114833.png" alt=""></li>
-<li>如遇这种情况加个括号获取数值<br><img src="images/2018-02-10-【iOS底层学习02】Cycript/WX20180224-114931.png" alt=""><img src="images/2018-02-10-【iOS底层学习02】Cycript/WX20180224-114945.png" alt=""></li>
-</ul>
+<p><img src="images/2017-11-16-swift-推特启动动画/mask0.png" alt=""></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ViewController</span>: <span class="title">UIViewController</span> </span>&#123;</span><br><span class="line">    <span class="meta">@IBOutlet</span> <span class="keyword">weak</span> <span class="keyword">var</span> contentV: <span class="type">UIImageView</span>!</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">lazy</span> <span class="keyword">var</span> maskLayer: <span class="type">CALayer</span> = &#123;</span><br><span class="line">        <span class="keyword">let</span> temp = <span class="type">CALayer</span>()</span><br><span class="line">        temp.bounds = <span class="type">CGRect</span>(x: <span class="number">0</span>, y: <span class="number">0</span>, width: <span class="number">120</span>, height: <span class="number">93</span>);</span><br><span class="line">        temp.contents = #imageLiteral(resourceName: <span class="string">"twitter logo mask"</span>).cgImage</span><br><span class="line">        <span class="keyword">return</span> temp</span><br><span class="line">    &#125;()</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">override</span> <span class="function"><span class="keyword">func</span> <span class="title">viewDidLoad</span><span class="params">()</span></span> &#123;</span><br><span class="line">        <span class="keyword">super</span>.viewDidLoad()</span><br><span class="line">        setupUI()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">extension</span> <span class="title">ViewController</span> </span>&#123;</span><br><span class="line">    <span class="keyword">fileprivate</span> <span class="function"><span class="keyword">func</span> <span class="title">setupUI</span> <span class="params">()</span></span> &#123;</span><br><span class="line">        maskLayer.position = view.center</span><br><span class="line">        contentV.layer.mask = maskLayer</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>效果如下：<br><img src="images/2017-11-16-swift-推特启动动画/mask1.png" alt=""></p>
+<h1 id="动画"><a href="#动画" class="headerlink" title="动画"></a>动画</h1><p>&emsp;&emsp;既然是多个动画顺序执行，那么这边就使用<code>CAKeyframeAnimation</code>帧动画的形式进行构建</p>
+<p>&emsp;&emsp;缩小动画呈现的是慢进慢出的效果并且整体动画有个延迟执行。<br>&emsp;&emsp;<strong>慢进慢出：</strong><code>kCAMediaTimingFunctionEaseInEaseOut</code><br>&emsp;&emsp;<strong>延迟执行：</strong><code>anim.beginTime = CACurrentMediaTime() + 0.5</code></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> anim = <span class="type">CAKeyframeAnimation</span>(keyPath: <span class="string">"transform.scale"</span>)</span><br><span class="line"><span class="keyword">let</span> begin = <span class="number">1.0</span></span><br><span class="line"><span class="keyword">let</span> middle = <span class="number">0.8</span></span><br><span class="line">    </span><br><span class="line">anim.beginTime = <span class="type">CACurrentMediaTime</span>() + <span class="number">0.5</span></span><br><span class="line">anim.duration = <span class="number">1.5</span></span><br><span class="line">anim.values = [begin,middle]</span><br><span class="line">anim.keyTimes = [<span class="number">0</span>,<span class="number">0.2</span>]</span><br><span class="line">anim.timingFunctions = [<span class="type">CAMediaTimingFunction</span>(name: kCAMediaTimingFunctionEaseInEaseOut)]</span><br><span class="line">anim.isRemovedOnCompletion = <span class="literal">false</span></span><br><span class="line">anim.fillMode = kCAFillModeForwards</span><br><span class="line">anim.delegate = <span class="keyword">self</span></span><br><span class="line">maskLayer.add(anim, forKey: <span class="literal">nil</span>)</span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;放大动画呈现慢出效果<br>&emsp;&emsp;<strong><code>values</code>添加放大的值</strong><br>&emsp;&emsp;<strong><code>timingFunctions</code>添加<code>kCAMediaTimingFunctionEaseOut</code></strong></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> end = screenH / <span class="built_in">min</span>(maskLayer.w(), maskLayer.h()) * <span class="number">3</span></span><br><span class="line">anim.values = [begin,middle,end]</span><br><span class="line">anim.timingFunctions = [<span class="type">CAMediaTimingFunction</span>(name: kCAMediaTimingFunctionEaseInEaseOut),<span class="type">CAMediaTimingFunction</span>(name: kCAMediaTimingFunctionEaseOut)]</span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;动画完成移除推特图标</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">extension</span> <span class="title">ViewController</span>:<span class="title">CAAnimationDelegate</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">func</span> <span class="title">animationDidStop</span><span class="params">(<span class="number">_</span> anim: CAAnimation, finished flag: Bool)</span></span> &#123;</span><br><span class="line">        contentV.layer.mask = <span class="literal">nil</span></span><br><span class="line">        maskLayer.removeFromSuperlayer()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="整体代码"><a href="#整体代码" class="headerlink" title="整体代码"></a>整体代码</h1><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//  ViewController.swift</span></span><br><span class="line"><span class="comment">//  TwitterLaunch</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//  Created by 荣 Jason on 2017/11/16.</span></span><br><span class="line"><span class="comment">//  Copyright © 2017年 荣 Jason. All rights reserved.</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> UIKit</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> screenH = <span class="type">UIScreen</span>.main.bounds.size.height</span><br><span class="line"></span><br><span class="line"><span class="comment">// MARK: - 工具类</span></span><br><span class="line"><span class="class"><span class="keyword">extension</span> <span class="title">CALayer</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">func</span> <span class="title">w</span><span class="params">()</span></span> -&gt; <span class="type">CGFloat</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> frame.size.width</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">func</span> <span class="title">h</span><span class="params">()</span></span> -&gt; <span class="type">CGFloat</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> frame.size.height</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// MARK: - 正文</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ViewController</span>: <span class="title">UIViewController</span> </span>&#123;</span><br><span class="line">    <span class="meta">@IBOutlet</span> <span class="keyword">weak</span> <span class="keyword">var</span> contentV: <span class="type">UIImageView</span>!</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">lazy</span> <span class="keyword">var</span> maskLayer: <span class="type">CALayer</span> = &#123;</span><br><span class="line">        <span class="keyword">let</span> temp = <span class="type">CALayer</span>()</span><br><span class="line">        temp.bounds = <span class="type">CGRect</span>(x: <span class="number">0</span>, y: <span class="number">0</span>, width: <span class="number">120</span>, height: <span class="number">93</span>);</span><br><span class="line">        temp.contents = #imageLiteral(resourceName: <span class="string">"twitter logo mask"</span>).cgImage</span><br><span class="line">        <span class="keyword">return</span> temp</span><br><span class="line">    &#125;()</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">override</span> <span class="function"><span class="keyword">func</span> <span class="title">viewDidLoad</span><span class="params">()</span></span> &#123;</span><br><span class="line">        <span class="keyword">super</span>.viewDidLoad()</span><br><span class="line">        setupUI()</span><br><span class="line">        setupAnim()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">extension</span> <span class="title">ViewController</span> </span>&#123;</span><br><span class="line">    <span class="keyword">fileprivate</span> <span class="function"><span class="keyword">func</span> <span class="title">setupUI</span> <span class="params">()</span></span> &#123;</span><br><span class="line">        maskLayer.position = view.center</span><br><span class="line">        contentV.layer.mask = maskLayer</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">extension</span> <span class="title">ViewController</span> </span>&#123;</span><br><span class="line">    <span class="keyword">fileprivate</span> <span class="function"><span class="keyword">func</span> <span class="title">setupAnim</span><span class="params">()</span></span> &#123;</span><br><span class="line">        <span class="keyword">let</span> anim = <span class="type">CAKeyframeAnimation</span>(keyPath: <span class="string">"transform.scale"</span>)</span><br><span class="line">        <span class="keyword">let</span> begin = <span class="number">1.0</span></span><br><span class="line">        <span class="keyword">let</span> middle = <span class="number">0.8</span></span><br><span class="line">        <span class="keyword">let</span> end = screenH / <span class="built_in">min</span>(maskLayer.w(), maskLayer.h()) * <span class="number">3</span></span><br><span class="line">        </span><br><span class="line">        anim.beginTime = <span class="type">CACurrentMediaTime</span>() + <span class="number">0.5</span></span><br><span class="line">        anim.duration = <span class="number">1.5</span></span><br><span class="line">        anim.values = [begin,middle,end]</span><br><span class="line">        anim.keyTimes = [<span class="number">0</span>,<span class="number">0.2</span>,<span class="number">0.5</span>]</span><br><span class="line">        anim.timingFunctions = [<span class="type">CAMediaTimingFunction</span>(name: kCAMediaTimingFunctionEaseInEaseOut),<span class="type">CAMediaTimingFunction</span>(name: kCAMediaTimingFunctionEaseOut)]</span><br><span class="line">        anim.isRemovedOnCompletion = <span class="literal">false</span></span><br><span class="line">        anim.fillMode = kCAFillModeForwards</span><br><span class="line">        anim.delegate = <span class="keyword">self</span></span><br><span class="line">        maskLayer.add(anim, forKey: <span class="literal">nil</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">extension</span> <span class="title">ViewController</span>:<span class="title">CAAnimationDelegate</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">func</span> <span class="title">animationDidStop</span><span class="params">(<span class="number">_</span> anim: CAAnimation, finished flag: Bool)</span></span> &#123;</span><br><span class="line">        contentV.layer.mask = <span class="literal">nil</span></span><br><span class="line">        maskLayer.removeFromSuperlayer()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><br><br><a href="https://github.com/627969687/TwitterLaunch" target="_blank" rel="noopener">demo下载</a></p>
 
       
     </div>
@@ -612,6 +508,19 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/iOS/" rel="tag" style="background-color: #6F6F6F;color: white;border-radius: 3px;padding: 0px 8px;font-size: 10px;"> iOS</a>
+            
+          
+            <a href="/tags/swift/" rel="tag" style="background-color: #6F6F6F;color: white;border-radius: 3px;padding: 0px 8px;font-size: 10px;"> swift</a>
+            
+          
+            <a href="/tags/动画/" rel="tag" style="background-color: #6F6F6F;color: white;border-radius: 3px;padding: 0px 8px;font-size: 10px;"> 动画</a>
+            
+          
+        </div>
+      
 
       
       
@@ -621,8 +530,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/12/13.html" rel="next" title="next-侧边栏时钟">
-                <i class="fa fa-chevron-left"></i> next-侧边栏时钟
+              <a href="/2017/11/08/undefined.html" rel="next" title="UIPickerView三级联动">
+                <i class="fa fa-chevron-left"></i> UIPickerView三级联动
               </a>
             
           </div>
@@ -630,6 +539,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/12/13/undefined.html" rel="prev" title="next-侧边栏时钟">
+                next-侧边栏时钟 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -842,7 +755,7 @@ function zeroPadding(num, digit) {
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#拷贝MJ封装的Cycript库"><span class="nav-number">1.</span> <span class="nav-text">拷贝MJ封装的Cycript库</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#SSH登录手机"><span class="nav-number">2.</span> <span class="nav-text">SSH登录手机</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#PS获取进程"><span class="nav-number">3.</span> <span class="nav-text">PS获取进程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Cycript连接进程"><span class="nav-number">4.</span> <span class="nav-text">Cycript连接进程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#MJ库的导入及使用"><span class="nav-number">5.</span> <span class="nav-text">MJ库的导入及使用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#注意"><span class="nav-number">6.</span> <span class="nav-text">注意</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#背景"><span class="nav-number">1.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#推特图标"><span class="nav-number">2.</span> <span class="nav-text">推特图标</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#动画"><span class="nav-number">3.</span> <span class="nav-text">动画</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#整体代码"><span class="nav-number">4.</span> <span class="nav-text">整体代码</span></a></li></ol></div>
             
 
           </div>
