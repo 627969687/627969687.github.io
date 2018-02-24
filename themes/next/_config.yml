@@ -408,8 +408,8 @@ gitment:
   language: # Force language, or auto switch by theme
   github_user: 627969687 # MUST HAVE, Your Github ID
   github_repo: 627969687.github.io # MUST HAVE, The repo you use to store Gitment comments
-  client_id: 61b06d473f4d8e0aec95 # MUST HAVE, Github client id for the Gitment
-  client_secret: 3e3dbe50da634ea841bdd4c891323276de0ced3d # EITHER this or proxy_gateway, Github access secret token for the Gitment
+  client_id: e0bae8b533bdc9ec7f84 # MUST HAVE, Github client id for the Gitment
+  client_secret: 9ff67b3fd443c54a1e542f38439b5890a58031e7 # EITHER this or proxy_gateway, Github access secret token for the Gitment
   # e0bae8b533bdc9ec7f84 # github
   # 9ff67b3fd443c54a1e542f38439b5890a58031e7 # github
   proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
