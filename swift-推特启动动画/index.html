@@ -91,16 +91,16 @@
 <meta property="og:site_name" content="404博客">
 <meta property="og:description" content="&amp;emsp;&amp;emsp;很久之前看到过推特的启动动画感觉比较炫酷，趁最近比较闲的情况下写了个demo。 &amp;emsp;&amp;emsp;观察上图我们可以发现推特图标部分透明，推特图标先缩小再放大至全屏">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://www.404not.cn/swift-推特启动动画/images/2017-11-16-swift-推特启动动画/twitter.gif">
-<meta property="og:image" content="http://www.404not.cn/swift-推特启动动画/images/2017-11-16-swift-推特启动动画/content0.png">
-<meta property="og:image" content="http://www.404not.cn/swift-推特启动动画/images/2017-11-16-swift-推特启动动画/content1.png">
-<meta property="og:image" content="http://www.404not.cn/swift-推特启动动画/images/2017-11-16-swift-推特启动动画/mask0.png">
-<meta property="og:image" content="http://www.404not.cn/swift-推特启动动画/images/2017-11-16-swift-推特启动动画/mask1.png">
-<meta property="og:updated_time" content="2018-02-10T06:38:18.000Z">
+<meta property="og:image" content="http://www.404not.cn/swift-推特启动动画/twitter.gif">
+<meta property="og:image" content="http://www.404not.cn/swift-推特启动动画/content0.png">
+<meta property="og:image" content="http://www.404not.cn/swift-推特启动动画/content0.png">
+<meta property="og:image" content="http://www.404not.cn/swift-推特启动动画/mask0.png">
+<meta property="og:image" content="http://www.404not.cn/swift-推特启动动画/mask1.png">
+<meta property="og:updated_time" content="2018-03-14T08:02:50.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="swift-推特启动动画">
 <meta name="twitter:description" content="&amp;emsp;&amp;emsp;很久之前看到过推特的启动动画感觉比较炫酷，趁最近比较闲的情况下写了个demo。 &amp;emsp;&amp;emsp;观察上图我们可以发现推特图标部分透明，推特图标先缩小再放大至全屏">
-<meta name="twitter:image" content="http://www.404not.cn/swift-推特启动动画/images/2017-11-16-swift-推特启动动画/twitter.gif">
+<meta name="twitter:image" content="http://www.404not.cn/swift-推特启动动画/twitter.gif">
 
 
 
@@ -440,12 +440,13 @@
       
 
       
-        <p><img src="images/2017-11-16-swift-推特启动动画/twitter.gif" alt=""></p>
+        <img src="/swift-推特启动动画/twitter.gif">
 <p>&emsp;&emsp;很久之前看到过推特的启动动画感觉比较炫酷，趁最近比较闲的情况下写了个demo。</p>
 <p>&emsp;&emsp;观察上图我们可以发现推特图标部分透明，推特图标先缩小再放大至全屏<br><a id="more"></a></p>
 <h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>&emsp;&emsp;实现推特图标透明和动画前，我们先把背景弄一下吧<br>&emsp;&emsp;推特的主界面这里就先用一张图标代表，实际项目中自己再实现具体逻辑吧</p>
 <p>&emsp;&emsp;<code>Main.storyboard</code>中使用<code>UIImageView</code>充当内容<code>view</code>并设置背景<code>view</code>的颜色</p>
-<p><img src="images/2017-11-16-swift-推特启动动画/content0.png" alt=""><br><img src="images/2017-11-16-swift-推特启动动画/content1.png" alt=""></p>
+<img src="/swift-推特启动动画/content0.png">
+<img src="/swift-推特启动动画/content0.png">
 <h1 id="推特图标"><a href="#推特图标" class="headerlink" title="推特图标"></a>推特图标</h1><p>&emsp;&emsp;透明推特图标的实现主要是设置<code>CALayer</code>的<code>mask</code>图层。</p>
 <p><strong>需要用到的API：</strong></p>
 <table>
@@ -462,9 +463,9 @@
 </tr>
 </tbody>
 </table>
-<p><img src="images/2017-11-16-swift-推特启动动画/mask0.png" alt=""></p>
+<img src="/swift-推特启动动画/mask0.png">
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ViewController</span>: <span class="title">UIViewController</span> </span>&#123;</span><br><span class="line">    <span class="meta">@IBOutlet</span> <span class="keyword">weak</span> <span class="keyword">var</span> contentV: <span class="type">UIImageView</span>!</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">lazy</span> <span class="keyword">var</span> maskLayer: <span class="type">CALayer</span> = &#123;</span><br><span class="line">        <span class="keyword">let</span> temp = <span class="type">CALayer</span>()</span><br><span class="line">        temp.bounds = <span class="type">CGRect</span>(x: <span class="number">0</span>, y: <span class="number">0</span>, width: <span class="number">120</span>, height: <span class="number">93</span>);</span><br><span class="line">        temp.contents = #imageLiteral(resourceName: <span class="string">"twitter logo mask"</span>).cgImage</span><br><span class="line">        <span class="keyword">return</span> temp</span><br><span class="line">    &#125;()</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">override</span> <span class="function"><span class="keyword">func</span> <span class="title">viewDidLoad</span><span class="params">()</span></span> &#123;</span><br><span class="line">        <span class="keyword">super</span>.viewDidLoad()</span><br><span class="line">        setupUI()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">extension</span> <span class="title">ViewController</span> </span>&#123;</span><br><span class="line">    <span class="keyword">fileprivate</span> <span class="function"><span class="keyword">func</span> <span class="title">setupUI</span> <span class="params">()</span></span> &#123;</span><br><span class="line">        maskLayer.position = view.center</span><br><span class="line">        contentV.layer.mask = maskLayer</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>效果如下：<br><img src="images/2017-11-16-swift-推特启动动画/mask1.png" alt=""></p>
+<p>效果如下：<br><img src="/swift-推特启动动画/mask1.png"></p>
 <h1 id="动画"><a href="#动画" class="headerlink" title="动画"></a>动画</h1><p>&emsp;&emsp;既然是多个动画顺序执行，那么这边就使用<code>CAKeyframeAnimation</code>帧动画的形式进行构建</p>
 <p>&emsp;&emsp;缩小动画呈现的是慢进慢出的效果并且整体动画有个延迟执行。<br>&emsp;&emsp;<strong>慢进慢出：</strong><code>kCAMediaTimingFunctionEaseInEaseOut</code><br>&emsp;&emsp;<strong>延迟执行：</strong><code>anim.beginTime = CACurrentMediaTime() + 0.5</code></p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> anim = <span class="type">CAKeyframeAnimation</span>(keyPath: <span class="string">"transform.scale"</span>)</span><br><span class="line"><span class="keyword">let</span> begin = <span class="number">1.0</span></span><br><span class="line"><span class="keyword">let</span> middle = <span class="number">0.8</span></span><br><span class="line">    </span><br><span class="line">anim.beginTime = <span class="type">CACurrentMediaTime</span>() + <span class="number">0.5</span></span><br><span class="line">anim.duration = <span class="number">1.5</span></span><br><span class="line">anim.values = [begin,middle]</span><br><span class="line">anim.keyTimes = [<span class="number">0</span>,<span class="number">0.2</span>]</span><br><span class="line">anim.timingFunctions = [<span class="type">CAMediaTimingFunction</span>(name: kCAMediaTimingFunctionEaseInEaseOut)]</span><br><span class="line">anim.isRemovedOnCompletion = <span class="literal">false</span></span><br><span class="line">anim.fillMode = kCAFillModeForwards</span><br><span class="line">anim.delegate = <span class="keyword">self</span></span><br><span class="line">maskLayer.add(anim, forKey: <span class="literal">nil</span>)</span><br></pre></td></tr></table></figure>
