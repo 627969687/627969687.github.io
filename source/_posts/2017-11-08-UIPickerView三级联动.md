@@ -13,15 +13,16 @@ categories:
 keywords:
 description:
 ---
-![](images/2017-11-08-UIPickerView三级联动/WX20171129-114238.png)
+{% asset_img WX20171129-114238.png %}
 <!-- more -->
 前几天朋友要求帮忙使用`OC`写一个<省-市-区>的`UIPickerView`控件，写完之后这里给大家讲一下思路和遇到的问题.....
 
-[数据](files/2017-11-08-UIPickerView三级联动/files.zip)是由朋友提供，这里已经把数据保存到本地，请参考《[macOS环境生成json假数据](http://tk_jacky.gitee.io/macOS%E7%8E%AF%E5%A2%83%E7%94%9F%E6%88%90json%E5%81%87%E6%95%B0%E6%8D%AE.html)》制作假数据
+<p>
+{% asset_link files.zip 数据 %}是由朋友提供，这里已经把数据保存到本地，请参考《[macOS环境生成json假数据](http://tk_jacky.gitee.io/macOS%E7%8E%AF%E5%A2%83%E7%94%9F%E6%88%90json%E5%81%87%E6%95%B0%E6%8D%AE.html)》制作假数据
+</p>
 
 # 数据
-![](images/2017-11-08-UIPickerView三级联动/WX20171202-115530.png)
-![](images/2017-11-08-UIPickerView三级联动/WX20171202-115530.png)
+{% asset_img WX20171202-115530.png %}
 
 观察数据格式，我们可以发现省、市、区的名字由`name`这个键值对控制，每个省/市下有多少个市/区由`children`控制
 

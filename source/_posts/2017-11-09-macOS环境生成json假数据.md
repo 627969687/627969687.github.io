@@ -41,7 +41,7 @@ sudo touch test.json
 
 网页输入<http://localhost/test.json>查看
 `localhost`相当于本机IP地址，如需提供给同事测试需要提供完整的IP地址
-![](images/2017-11-09-macOS环境生成json假数据/WX20171115-180312.png)
+{% asset_img WX20171115-180312.png %}
 
 # apache+php
 开启apache服务器
@@ -77,7 +77,7 @@ echo json_encode($jsondata);
 ```
 
 网页输入<http://localhost/test.php>查看
-![](images/2017-11-09-macOS环境生成json假数据/WX20171115-192217.png)
+{% asset_img WX20171115-192217.png %}
 
 # xcode调试
 成功创建json文件或php文件后，将其url直接进行网络请求
