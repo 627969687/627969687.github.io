@@ -1,9 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Python-mac多python版本]]></title>
+    <url>%2FPython-mac%E5%A4%9Apython%E7%89%88%E6%9C%AC%2F</url>
+    <content type="text"><![CDATA[运行环境 环境 描述 系统 macOS 10.13 命令行 Oh My Zsh 工具 homebrew pip pyenv virtualenv Virtaulenvwrapper 配置环境安装homebrew1$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" 安装zshMac下安装zsh（Oh My ZSH）的shell，替代原有的bash 安装pipmacOS安装pip 安装pyenv1$ brew install pyenv .zshrc配置文件添加配置 12if which pyenv &gt; /dev/null; then eval "$(pyenv init -)"; fiexport PYENV_ROOT=/usr/local/var/pyenv 安装virtualenv&amp;&amp;virtualenvwrapper123$ pip install virtualenv$ pip install virtualenvwrapper$ mkdir $HOME/.virtualenvs .zshrc配置文件添加配置 12export WORKON_HOME=$HOME/.virtualenvssource /usr/local/bin/virtualenvwrapper.sh 重新加载配置文件 1$ source ~/.zshrc 搭建和使用不同的环境创建虚拟环境并指定版本 123456789101112131415161718# 安装Python3.6.4$ pyenv install 3.6.4$ pyenv rehash# 切换到刚安装的版本$ pyenv local 3.6.4$ source .zshrc# 验证版本$ python -V# 在新的python环境里安装virtualenv&amp;&amp;virtualenvwrapper$ pip install virtualenv$ pip install virtualenvwrapper$ source .zshrc# 创建开发环境$ mkvirtualenv py3dev# 创建完开发环境，即可退出$ deactivate$ pyenv local --unset 3.6.4$ source .zshrc 同理安装其他python环境也是一样的操作 使用方法 1234# 使用python 3.6.4$ workon py3dev# 切换其他版本记得退出当前虚拟环境$ deactivate]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>mac</tag>
+        <tag>Python3</tag>
+        <tag>Python2</tag>
+        <tag>shell</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[iOS底层02-Cycript]]></title>
     <url>%2FiOS%E5%BA%95%E5%B1%8202-Cycript%2F</url>
     <content type="text"><![CDATA[拷贝MJ封装的Cycript库 拷贝mjcript.py到/usr/lib/cycript0.9目录中（非登录环境中使用） 1scp -P 10010 ~/Downloads/课件/工具/mjcript-master/mjcript.cy root@localhost:/usr/lib/cycript0.9 也可以通过iFunBox直接拖拽 SSH登录手机 USB方式映射MAC端口进行SSH登录（初始密码alpine） 12python tcprelay.py -t 22:10010ssh root@localhost -p 10010 wifi方式SSH登录 PS获取进程 PS命令 描述 ps -A 获取所有进程 ps -A&#124;grep 根据关键字获取进程 Cycript连接进程cycript -p 进程名称/进程id 1cycript -p WeChat // 连接微信 MJ库的导入及使用1@import mjcript // 导入MJCript库 基本 描述 MJLoadFramework() 加载OC库 MJAppId 获取bundleID MJAppPath 获取bundle文件夹路径 MJDocPath 获取document文件夹路径 MJCachesPath 获取caches文件夹路径 对象/类相关 描述 MJKeyWin() 获取keywindow MJRootVc() 获取根控制器 MJFrontVc() 获取最前面的控制器 MJChildVcs() 获取指定控制器的所有子控制器 MJSubviews() 获取指定view的所有子控件 MJSubclasses() 获取指定类的所有子类 MJIvarNames() 获取所有成员变量名称 MJInstanceMethodNames() 获取指定对象的所有对象方法 MJClassMethodNames() 获取指定类的所有类方法 类型判断相关 描述 MJIsString() 判断是否是字符串 MJIsArray() 判断是否是数组 MJIsNumber() 判断是否是数字 CGRect相关 描述 MJPoint 根据frame获取位置（个人新增） MJX 根据frame获取X值（个人新增） MJY 根据frame获取Y值（个人新增） MJSize 根据frame获取尺寸（个人新增） MJWidth 根据frame获取宽度（个人新增） MJHeight 根据frame获取高度（个人新增） MJPointMake 代替CGPointMake的使用 MJSizeMake 代替CGSizeMake的使用 MJRectMake() 代替CGRectMake的使用 注意 所有结构体用类数组类型表示 如遇这种情况加个括号获取数值]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[next-侧边栏时钟]]></title>
