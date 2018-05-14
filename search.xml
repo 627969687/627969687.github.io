@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Python-打包]]></title>
+    <url>%2FPython-%E6%89%93%E5%8C%85%2F</url>
+    <content type="text"><![CDATA[配置环境安装PyInstaller1$ pip install PyInstaller PyInstaller描述 命令 描述 -F 生成单个可执行程序(自动关联模块) -W 去掉控制台窗口 -P 自定义需要加载的模块路径 -i 图标 目录结构 描述 build 存放打包过程的信息文件 dist 生成的程序放在该目录下 *.spec 对应的配置文件(每次打包都会生成) 依赖设置一般情况下，在py脚本中import了的库会自动被导入到包内。某些特殊的库或文件没有自动导入成功，这时我们需要设置配置文件 例如：psd_tools *.spec代码 123# -*- mode: python -*- block_cipher = None a = Analysis(['Psd2UI.py'], pathex=['C:\\Users\\Administrator\\Desktop\\psd_python\\scripts'], binaries=[], datas=[('C:\\Python27\\Lib\\site-packages\\psd_tools\\','')], hiddenimports=[], hookspath=[], runtime_hooks=[], excludes=[], win_no_prefer_redirects=False, win_private_assemblies=False, cipher=block_cipher) pyz = PYZ(a.pure, a.zipped_data, cipher=block_cipher) exe = EXE(pyz, a.scripts, a.binaries, a.zipfiles, a.datas, name='Psd2UI', debug=False, strip=False, upx=True, runtime_tmpdir=None, console=True ) 其中datas里圆括号左边参数代表文件路径；右边代表该路径下的子文件，为空则代表所有文件 1datas=[('C:\\Python27\\Lib\\site-packages\\psd_tools\\','')]]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python3</tag>
+        <tag>Python2</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Python-mac多python版本]]></title>
     <url>%2FPython-mac%E5%A4%9Apython%E7%89%88%E6%9C%AC%2F</url>
-    <content type="text"><![CDATA[运行环境 环境 描述 系统 macOS 10.13 命令行 Oh My Zsh 工具 homebrew pip pyenv virtualenv Virtaulenvwrapper 配置环境安装homebrew1$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" 安装zshMac下安装zsh（Oh My ZSH）的shell，替代原有的bash 安装pipmacOS安装pip 安装pyenv1$ brew install pyenv .zshrc配置文件添加配置 12if which pyenv &gt; /dev/null; then eval "$(pyenv init -)"; fiexport PYENV_ROOT=/usr/local/var/pyenv 安装virtualenv&amp;&amp;virtualenvwrapper123$ pip install virtualenv$ pip install virtualenvwrapper$ mkdir $HOME/.virtualenvs .zshrc配置文件添加配置 12export WORKON_HOME=$HOME/.virtualenvssource /usr/local/bin/virtualenvwrapper.sh 重新加载配置文件 1$ source ~/.zshrc 搭建和使用不同的环境创建虚拟环境并指定版本 123456789101112131415161718# 安装Python3.6.4$ pyenv install 3.6.4$ pyenv rehash# 切换到刚安装的版本$ pyenv local 3.6.4$ source .zshrc# 验证版本$ python -V# 在新的python环境里安装virtualenv&amp;&amp;virtualenvwrapper$ pip install virtualenv$ pip install virtualenvwrapper$ source .zshrc# 创建开发环境$ mkvirtualenv py3dev# 创建完开发环境，即可退出$ deactivate$ pyenv local --unset 3.6.4$ source .zshrc 同理安装其他python环境也是一样的操作 使用方法 1234# 使用python 3.6.4$ workon py3dev# 切换其他版本记得退出当前虚拟环境$ deactivate]]></content>
+    <content type="text"><![CDATA[运行环境 环境 描述 系统 macOS 10.13 命令行 Oh My Zsh 工具 homebrew pippyenvvirtualenvVirtaulenvwrapper 配置环境安装homebrew1$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" 安装zshMac下安装zsh（Oh My ZSH）的shell，替代原有的bash 安装pipmacOS安装pip 安装pyenv1$ brew install pyenv .zshrc配置文件添加配置 12if which pyenv &gt; /dev/null; then eval "$(pyenv init -)"; fiexport PYENV_ROOT=/usr/local/var/pyenv 安装virtualenv&amp;&amp;virtualenvwrapper123$ pip install virtualenv$ pip install virtualenvwrapper$ mkdir $HOME/.virtualenvs .zshrc配置文件添加配置 12export WORKON_HOME=$HOME/.virtualenvssource /usr/local/bin/virtualenvwrapper.sh 重新加载配置文件 1$ source ~/.zshrc 搭建和使用不同的环境创建虚拟环境并指定版本 123456789101112131415161718# 安装Python3.6.4$ pyenv install 3.6.4$ pyenv rehash# 切换到刚安装的版本$ pyenv local 3.6.4$ source .zshrc# 验证版本$ python -V# 在新的python环境里安装virtualenv&amp;&amp;virtualenvwrapper$ pip install virtualenv$ pip install virtualenvwrapper$ source .zshrc# 创建开发环境$ mkvirtualenv py3dev# 创建完开发环境，即可退出$ deactivate$ pyenv local --unset 3.6.4$ source .zshrc 同理安装其他python环境也是一样的操作 使用方法 1234# 使用python 3.6.4$ workon py3dev# 切换其他版本记得退出当前虚拟环境$ deactivate]]></content>
       <categories>
         <category>Python</category>
       </categories>

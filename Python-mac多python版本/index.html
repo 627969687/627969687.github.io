@@ -90,7 +90,7 @@
 <meta property="og:site_name" content="404博客">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://www.404not.cn/Python-mac多python版本/demo.png">
-<meta property="og:updated_time" content="2018-04-03T07:15:23.000Z">
+<meta property="og:updated_time" content="2018-05-14T07:29:08.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python-mac多python版本">
 <meta name="twitter:image" content="http://www.404not.cn/Python-mac多python版本/demo.png">
@@ -431,38 +431,22 @@
 </tr>
 <tr>
 <td>工具</td>
-<td><code>homebrew</code> </td>
-</tr>
-<tr>
-<td></td>
-<td><code>pip</code> </td>
-</tr>
-<tr>
-<td></td>
-<td><code>pyenv</code></td>
-</tr>
-<tr>
-<td></td>
-<td><code>virtualenv</code> </td>
-</tr>
-<tr>
-<td></td>
-<td><code>Virtaulenvwrapper</code> </td>
+<td><code>homebrew</code> <br><code>pip</code><br><code>pyenv</code><br><code>virtualenv</code><br><code>Virtaulenvwrapper</code><br></td>
 </tr>
 </tbody>
 </table>
 <hr>
-<h1 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h1><h2 id="安装homebrew"><a href="#安装homebrew" class="headerlink" title="安装homebrew"></a>安装<code>homebrew</code></h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</span><br></pre></td></tr></table></figure>
+<h1 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h1><h2 id="安装homebrew"><a href="#安装homebrew" class="headerlink" title="安装homebrew"></a>安装<code>homebrew</code></h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> /usr/bin/ruby -e <span class="string">"<span class="variable">$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)</span>"</span></span></span><br></pre></td></tr></table></figure>
 <h2 id="安装zsh"><a href="#安装zsh" class="headerlink" title="安装zsh"></a>安装<code>zsh</code></h2><p><a href="https://www.cnblogs.com/EasonJim/p/6283247.html" target="_blank" rel="noopener">Mac下安装zsh（Oh My ZSH）的shell，替代原有的bash</a></p>
 <h2 id="安装pip"><a href="#安装pip" class="headerlink" title="安装pip"></a>安装<code>pip</code></h2><p><a href="https://www.jianshu.com/p/3111c42483df" target="_blank" rel="noopener">macOS安装pip</a></p>
-<h2 id="安装pyenv"><a href="#安装pyenv" class="headerlink" title="安装pyenv"></a>安装<code>pyenv</code></h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> brew install pyenv</span><br></pre></td></tr></table></figure>
+<h2 id="安装pyenv"><a href="#安装pyenv" class="headerlink" title="安装pyenv"></a>安装<code>pyenv</code></h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> brew install pyenv</span></span><br></pre></td></tr></table></figure>
 <p>.zshrc配置文件添加配置</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> which pyenv &gt; <span class="regexp">/dev/</span><span class="literal">null</span>; then <span class="built_in">eval</span> <span class="string">"$(pyenv init -)"</span>; fi</span><br><span class="line"><span class="keyword">export</span> PYENV_ROOT=<span class="regexp">/usr/</span>local/<span class="keyword">var</span>/pyenv</span><br></pre></td></tr></table></figure>
-<h2 id="安装virtualenv-amp-amp-virtualenvwrapper"><a href="#安装virtualenv-amp-amp-virtualenvwrapper" class="headerlink" title="安装virtualenv&amp;&amp;virtualenvwrapper"></a>安装<code>virtualenv&amp;&amp;virtualenvwrapper</code></h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> pip install virtualenv</span><br><span class="line"><span class="meta">$</span> pip install virtualenvwrapper</span><br><span class="line"><span class="meta">$</span> mkdir $HOME/.virtualenvs</span><br></pre></td></tr></table></figure>
+<h2 id="安装virtualenv-amp-amp-virtualenvwrapper"><a href="#安装virtualenv-amp-amp-virtualenvwrapper" class="headerlink" title="安装virtualenv&amp;&amp;virtualenvwrapper"></a>安装<code>virtualenv&amp;&amp;virtualenvwrapper</code></h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> pip install virtualenv</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> pip install virtualenvwrapper</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> mkdir <span class="variable">$HOME</span>/.virtualenvs</span></span><br></pre></td></tr></table></figure>
 <p>.zshrc配置文件添加配置</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> WORKON_HOME=$HOME/.virtualenvs</span><br><span class="line">source /usr/local/bin/virtualenvwrapper.sh</span><br></pre></td></tr></table></figure>
 <p>重新加载配置文件</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> source ~/.zshrc</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">source</span> ~/.zshrc</span></span><br></pre></td></tr></table></figure>
 <h2 id="搭建和使用不同的环境"><a href="#搭建和使用不同的环境" class="headerlink" title="搭建和使用不同的环境"></a>搭建和使用不同的环境</h2><p>创建虚拟环境并指定版本</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装Python3.6.4</span></span><br><span class="line">$ pyenv install <span class="number">3.6</span><span class="number">.4</span></span><br><span class="line">$ pyenv rehash</span><br><span class="line"><span class="comment"># 切换到刚安装的版本</span></span><br><span class="line">$ pyenv local <span class="number">3.6</span><span class="number">.4</span></span><br><span class="line">$ source .zshrc</span><br><span class="line"><span class="comment"># 验证版本</span></span><br><span class="line">$ python -V</span><br><span class="line"><span class="comment"># 在新的python环境里安装virtualenv&amp;&amp;virtualenvwrapper</span></span><br><span class="line">$ pip install virtualenv</span><br><span class="line">$ pip install virtualenvwrapper</span><br><span class="line">$ source .zshrc</span><br><span class="line"><span class="comment"># 创建开发环境</span></span><br><span class="line">$ mkvirtualenv py3dev</span><br><span class="line"><span class="comment"># 创建完开发环境，即可退出</span></span><br><span class="line">$ deactivate</span><br><span class="line">$ pyenv local --unset <span class="number">3.6</span><span class="number">.4</span></span><br><span class="line">$ source .zshrc</span><br></pre></td></tr></table></figure>
 <p>同理安装其他python环境也是一样的操作</p>
@@ -536,6 +520,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/Python-打包/" rel="prev" title="Python-打包">
+                Python-打包 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -648,7 +636,7 @@ var jiathis_config={
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
