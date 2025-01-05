@@ -39,5 +39,8 @@ jobs:
           ref: gh-pages
 
       - name: Deploy to GitHub Pages2
-        run: yarn deploy
+        uses: actions/deploy-pages@v4
+        with: 
+          token: ${{ secrets.PRIVATE_TOKEN_GITHUB }}
+          ref: gh-pages
 
