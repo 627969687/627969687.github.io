@@ -2,15 +2,15 @@ import { defineConfig } from 'vitepress'
 import { generateSidebar } from 'vitepress-sidebar'
 import { withMermaid } from "vitepress-plugin-mermaid"
 
-const docPath = '/markdown'
-const iOSPath = docPath + '/1-iOS'
-const nodePath = docPath + '/2-note'
+const docPath = 'markdown'
+const iOSPath = '/1-iOS'
+const nodePath = '/2-note'
 export default withMermaid({
   title: "TkJacky",
   description: "good good study, day day up",
   lang: 'zh-CN',
   lastUpdated: true,
-  srcDir: '.', 
+  srcDir: docPath, 
   markdown: {
     lineNumbers: true,
   },
@@ -32,12 +32,12 @@ export default withMermaid({
       {
       // 白名单
       // excludePattern: ['vitepress-how-to']
-        documentRootPath: iOSPath,
+        documentRootPath: docPath + iOSPath,
         basePath: '',
         resolvePath: iOSPath + '/',
       },
       {
-        documentRootPath: nodePath,
+        documentRootPath: docPath + nodePath,
         basePath: '',
         resolvePath: nodePath + '/',
       },
