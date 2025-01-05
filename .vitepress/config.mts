@@ -3,8 +3,8 @@ import { generateSidebar } from 'vitepress-sidebar'
 import { withMermaid } from "vitepress-plugin-mermaid"
 
 const docPath = 'markdown'
-const iOSPath = '/1-iOS'
-const nodePath = '/2-note'
+const iOSPath = '/01-iOS'
+const nodePath = '/02-note'
 export default withMermaid({
   title: "TkJacky",
   description: "good good study, day day up",
@@ -25,8 +25,8 @@ export default withMermaid({
     ],
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'iOS', link: iOSPath + '/1-OC/1-对象'},
-      { text: 'note', link: nodePath + '/1-Obsidian/1-基本搭建' },
+      { text: 'iOS', link: iOSPath + '/01-OC/01-对象'},
+      { text: 'note', link: nodePath + '/01-Obsidian/01-基本搭建' },
     ],
     sidebar: generateSidebar([
       {
