@@ -16,6 +16,9 @@ export default withMermaid({
   },
   themeConfig: {
     // logo: '/tk.png',
+    search: {
+      provider: "local",
+    },
     outline: {
       level: [1,2,3],
       label: '目录',
